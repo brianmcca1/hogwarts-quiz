@@ -2,6 +2,35 @@
   text-align: center;
 }
 
+
+.questionTitle {
+  padding-bottom: 8px;
+  text-align: left;
+}
+
+.nameField {
+  width: 50% !important;
+  margin: auto;
+}
+
+.enterName {
+  font-weight: bold;
+}
+
+.question {
+  padding: 10px;
+  width: 60%;
+  margin: auto;
+}
+
+.sortButton {
+  margin: auto;
+}
+
+.answer {
+  text-align: left;
+}
+
 .title {
   padding-bottom: 20px;
 }

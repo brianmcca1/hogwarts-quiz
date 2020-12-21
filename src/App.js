@@ -76,6 +76,9 @@ function App() {
   };
 
   const getPercentage = houseTotal => {
+    if (!houseTotal) {
+      return 0;
+    }
     return Math.round((houseTotal / (pointTotals.gryffindor + pointTotals.hufflepuff + pointTotals.slytherin + pointTotals.ravenclaw)) * 100);
   }
 
@@ -92,11 +95,11 @@ function App() {
         <h1>The One True Hogwarts House Quiz</h1>
         <h3>By Olivia Losiewicz and Brian McCarthy</h3>
       </div>
-      <Form onSubmit={handleSubmit} onReset={handleSubmit}>
-        <Form.Label>Enter your name</Form.Label>
+      <Form onSubmit={handleSubmit} onReset={handleSubmit} className="form">
+        <Form.Label className="enterName">Enter your name</Form.Label>
         <Form.Control
           required
-          className="mb-2"
+          className="mb-2 nameField"
           type="text"
           placeholder="First name"
           id="name"
@@ -106,7 +109,7 @@ function App() {
             <Question question={q} key={q.title}/>
           )
         }
-        <Button variant="primary" type="submit">Sort me!</Button>
+        <Button variant="primary" type="submit" className="sortButton">Sort me!</Button>
       </Form>
       <h1>Gryffindor: {getPercentage(pointTotals.gryffindor)}%</h1>
       <h1>Ravenclaw: {getPercentage(pointTotals.ravenclaw)}%</h1>
