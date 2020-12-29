@@ -1,68 +1,5 @@
 const questionBank = [
   {
-    title: "How would you like to be known to history?",
-    answers: [
-      {
-        answer: "The wise",
-        ravenclaw: 100
-      },
-      {
-        answer: "The kind",
-        hufflepuff: 100
-      },
-      {
-        answer: "The exceptional",
-        slytherin: 100
-      },
-      {
-        answer: "The brave",
-        gryffindor: 100
-      }
-    ],
-  },
-  {
-    title: "If you could have more of one of the following things in your Muggle life, which would you choose?",
-    answers: [
-      {
-        answer: "Time: you get an extra hour each day",
-        hufflepuff: 100,
-      },
-      {
-        answer: "Luck: everything goes your way",
-        gryffindor: 100,
-      },
-      {
-        answer: "Wisdom: the capacity to understand things more readily",
-        ravenclaw: 100,
-      },
-      {
-        answer: "Skill: instance improvement at any set of skills you choose",
-        slytherin: 100,
-      }
-    ]
-  },
-  {
-    title: "Which of the following would you most hate people to call you?",
-    answers: [
-      {
-        answer: "Incapable",
-        slytherin: 100,
-      },
-      {
-        answer: "Close-Minded",
-        ravenclaw: 100,
-      },
-      {
-        answer: "Cowardly",
-        gryffindor: 100,
-      },
-      {
-        answer: "Selfish",
-        hufflepuff: 100,
-      },
-    ]
-  },
-  {
     title: "When you  post on social media, how do you want your followers to  perceive you?",
     answers: [
       {
@@ -94,7 +31,7 @@ const questionBank = [
         ravenclaw: 100,
       },
       {
-        answer: "I have never thought about it",
+        answer: "Intelligent",
         ravenclaw: 100,
       }
     ]
@@ -115,29 +52,8 @@ const questionBank = [
         slytherin: 50,
       },
       {
-        answer: "The statue of an old wizard with a strangely twinkling eye",
+        answer: "The mouth of a cave too dark to see into, but with faint music coming from within",
         gryffindor:  50,
-      }
-    ]
-  },
-  {
-    title: "Four boxes are placed before you. Which would you try to open?",
-    answers: [
-      {
-        answer: "The small tortoiseshell box, embellished with gold, inside which some small creature seems to be squeaking.",
-        hufflepuff: 100,
-      },
-      {
-        answer: "The gleaming emerald box with a silver lock and key, marked with a mysterious rune that you know to be the mark of a powerful witch or wizard",
-        slytherin: 100,
-      },
-      {
-        answer: "The ornate golden casket, standing on clawed feet, whose inscription warns that secret knowledge lies within.",
-        ravenclaw: 100,
-      },
-      {
-        answer: "The small pewter box, unassuming and plain, with a scratched message upon it that reads ‘I open only for the most honorable",
-        gryffindor: 100,
       }
     ]
   },
@@ -145,28 +61,28 @@ const questionBank = [
     title: "A troll has gone beserk in the Room of Hidden Things at Hogwarts. It is about to smash, crush and tear several items and treasures. In which order would you rescue these objects from the troll's club, if you could?",
     answers: [
       {
-        answer: "First, the broomsticks belonging to the students on the Quidditch Team. Then student records going back 1000 years. Finally, a mysterious handwritten book full of strange runes.",
+        answer: "First, the broomsticks belonging to the students on the Quidditch Team. Then student records going back 1000 years. Finally, a handwritten book full of strange runes.",
         gryffindor: 50,
         hufflepuff: 50,
       },
       {
-        answer: "First, student records going back 1000 years. Then a mysterious handwritten book full of strange runes. Finally, the broomsticks belonging to the students on the Quidditch Team",
+        answer: "First, student records going back 1000 years. Then a handwritten book full of strange runes. Finally, the broomsticks belonging to the students on the Quidditch Team",
         slytherin: 100,
       },
       {
-        answer: "First, a mysterious handwritten book full of strange runes. Then the broomsticks belonging to the students on the Quidditch Team. Finally, student records going back 1000 years.",
+        answer: "First, a handwritten book full of strange runes. Then the broomsticks belonging to the students on the Quidditch Team. Finally, student records going back 1000 years.",
         ravenclaw: 100,
       },
       {
-        answer: "First, the broomsticks belonging to the students on the Quidditch Team. Then a mysterious handwritten book full of strange runes. Finally, student records going back 1000 years.",
+        answer: "First, the broomsticks belonging to the students on the Quidditch Team. Then a handwritten book full of strange runes. Finally, student records going back 1000 years.",
         gryffindor: 100,
       },
       {
-        answer: "First student records going back 1000 years. Then, the broomsticks belonging to the students on the Quidditch Team. Finally, a mysterious handwritten book full of strange runes.",
+        answer: "First student records going back 1000 years. Then, the broomsticks belonging to the students on the Quidditch Team. Finally, a handwritten book full of strange runes.",
         hufflepuff: 100,
       },
       {
-        answer: "First, a mysterious handwritten book full of strange runes. Then student records going back 1000 years. Finally, the broomsticks belonging to the students on the Quidditch Team",
+        answer: "First, a handwritten book full of strange runes. Then student records going back 1000 years. Finally, the broomsticks belonging to the students on the Quidditch Team",
         ravenclaw: 50,
         slytherin: 50,
       }
@@ -181,7 +97,7 @@ const questionBank = [
         slytherin: 50,
       },
       {
-        answer: "Power to influence opinions",
+        answer: "Power of super speed",
         gryffindor: 50,
         slytherin: 50,
       },
@@ -191,18 +107,14 @@ const questionBank = [
         slytherin: 50,
       },
       {
-        answer: "Power to speak any language",
+        answer: "Power to speak to animals",
         hufflepuff: 50,
         ravenclaw: 50,
       },
       {
-        answer: "Power to turn into an animal",
+        answer: "Power of elasticity (super stretching)",
         gryffindor: 50,
         hufflepuff: 50,
-      },
-      {
-        answer: "Power of super speed",
-        gryffindor: 100,
       },
       {
         answer: "Power to experience the past",
@@ -227,62 +139,7 @@ const questionBank = [
         gryffindor: 100,
       },
       {
-        answer: "Charms",
-        hufflepuff: 100,
-      }
-    ]
-  },
-  {
-    title: "Which of the following would you most like to study?",
-    answers: [
-      {
-        answer: "Centaurs",
-        gryffindor:  50,
-        ravenclaw: 50,
-      },
-      {
-        answer: "Sphinxes",
-        ravenclaw: 75,
-        slytherin: 25,
-      },
-      {
-        answer: "Dementors",
-        hufflepuff: 50,
-        slytherin: 50,
-      },
-      {
-        answer: "Ghosts",
-        hufflepuff: 50,
-        ravenclaw: 50,
-      },
-      {
-        answer: "Giants",
-        slytherin: 100,
-      },
-      {
-        answer: "Werewolves",
-        gryffindor: 50,
-        hufflepuff: 50,
-      }
-    ]
-  },
-  {
-    title: "A Muggle confronts you and says that they are sure you are a witch or wizard. Do  you:",
-    answers: [
-      {
-        answer: "Spend as long as necessary trying to convince them otherwise",
-        ravenclaw: 100,
-      },
-      {
-        answer: "Flatly deny it and walk away",
-        slytherin: 100,
-      },
-      {
-        answer: "Agree and walk away, leaving them to wonder whether you're bluffing",
-        gryffindor: 100,
-      },
-      {
-        answer: "Politely deny it, and then turn the conversation around to talk about them",
+        answer: "Herbology",
         hufflepuff: 100,
       }
     ]
@@ -299,54 +156,12 @@ const questionBank = [
         gryffindor: 100,
       },
       {
-        answer: "Waking up to find that neither your friends nor your family have any idea who you are.",
+        answer: "Waking up to find that no one has any idea who you are.",
         hufflepuff: 100,
       },
       {
         answer: "You are being chased by something that you can't see. You scream but no sound comes out",
         slytherin: 100,
-      }
-    ]
-  },
-  {
-    title: "You're home alone and you hear a peculiar noise from your attic that sounds like some sort of small wild animal. You're a little bit nervous about what it might be. What do you do?",
-    answers: [
-      {
-        answer: "Call animal control, just in case. Safety first!",
-        hufflepuff: 100,
-      },
-      {
-        answer: "Grab something to protect yourself and see for yourself what's making the noise",
-        gryffindor: 100,
-      },
-      {
-        answer: "Ignore it",
-        slytherin: 100,
-      },
-      {
-        answer: "Consult google to figure out which animals it might be, how dangerous they are, and how best to deal with them",
-        ravenclaw: 100,
-      }
-    ]
-  },
-  {
-    title: "A loved one is upset with you. Why?",
-    answers: [
-      {
-        answer: "A small disagreement spiraled out of control because you wouldn't admit that you were wrong",
-        gryffindor: 100,
-      },
-      {
-        answer: "You were being a pushover",
-        hufflepuff: 100,
-      },
-      {
-        answer: "You haven't been spending enough time with them",
-        slytherin: 100,
-      },
-      {
-        answer: "They are frustrated because you've been acting like a know-it-all",
-        ravenclaw: 100,
       }
     ]
   },
@@ -372,7 +187,7 @@ const questionBank = [
     ]
   },
   {
-    title: "Oh no! After young Harry Potter defeated He-Who-Must-Not-Be-Named, muggles noticed an influx of owls flying around during the day. Your work for the Department of Magical Accidents and Catastrophes, which is dispersing several teams to clear up this conundrum. Which role are you playing?",
+    title: "Oh no! After young Harry Potter defeated He-Who-Must-Not-Be-Named, the Ministry of Magic has its hands full. There are Dark Wizards on the run, wizards and Muggles alike have been injured by magical accidents, and Muggles have even noticed an influx of owls during the day. What are you doing to help respond to the crisis?",
     answers: [
       {
         answer: "You're on the Muggle-Worthy Excuse Committee, a team tasked with researching Muggle science and coming up with a plausible explanation for the owls to publish in the newspapers",
@@ -383,11 +198,11 @@ const questionBank = [
         slytherin: 100,
       },
       {
-        answer: "You are on the Catastrophe Contact Committee, talking to Muggles to figure out the scope of what they saw to assess the damage and inform the Ministry's response",
+        answer: "You are on the Catastrophe Response Committee, fixing property damage and/or healing injuries from magical duels or celebrations gone out of hand",
         hufflepuff: 100,
       },
       {
-        answer: "You're part of the Accidental Magic Reversal squad, going undercover in Muggle birdwatching groups to spread fake explanations for why the owls were out in the day",
+        answer: "You're an Auror, rounding up Dark Wizards on the loose",
         gryffindor: 100,
       }
     ]
