@@ -415,7 +415,7 @@ const questionBank = [
         slytherin: 100,
       },
       {
-        answer: "werewolves",
+        answer: "Werewolves",
         gryffindor: 50,
         hufflepuff: 50,
       }
@@ -472,7 +472,7 @@ const questionBank = [
         ravenclaw: 50,
       },
       {
-        answer: "Pheonix",
+        answer: "Phoenix",
         gryffindor: 50,
         ravenclaw: 50,
       },
