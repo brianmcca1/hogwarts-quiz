@@ -1,6 +1,7 @@
 import Form from "react-bootstrap/Form";
 
 const Question = ({question}) => {
+
   return(
     <div className="question">
       <h3 className="questionTitle">{question.title}</h3>
