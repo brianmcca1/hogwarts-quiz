@@ -382,7 +382,7 @@ const questionBank = [
         gryffindor: 100,
       },
       {
-        answer: "Herbology",
+        answer: "Care of Magical Creatures",
         hufflepuff: 100,
       }
     ]
