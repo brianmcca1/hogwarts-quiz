@@ -124,7 +124,7 @@ const questionBank = [
     ]
   },
   {
-    title: "If you could more of one of the following things in your Muggle life, which would you choose?",
+    title: "If you could have more of one of the following things in your Muggle life, which would you choose?",
     answers: [
       {
         answer: "Time: you get an extra hour each day",
