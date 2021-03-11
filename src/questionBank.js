@@ -60,7 +60,7 @@ const questionBank = [
         gryffindor: 100
       },
       {
-        answer: "Selfish",
+        answer: "Lazy",
         hufflepuff: 100
       }
     ]
@@ -127,19 +127,19 @@ const questionBank = [
     title: "If you could have more of one of the following things in your Muggle life, which would you choose?",
     answers: [
       {
-        answer: "Time: you get an extra hour each day",
+        answer: "Time",
         hufflepuff: 100
       },
       {
-        answer: "Luck: everything goes your way",
+        answer: "Luck",
         gryffindor: 100
       },
       {
-        answer: "Wisdom: the capacity to understand things more readily",
+        answer: "Wisdom",
         ravenclaw: 100
       },
       {
-        answer: "Skill: instant improvement at any set of skills you choose",
+        answer: "Skill",
         slytherin: 100
       }
     ]
@@ -198,7 +198,7 @@ const questionBank = [
         hufflepuff: 50,
       },
       {
-        answer: "A bubbling pool that is emitting a glowing light",
+        answer: "The statue of an old wizard with a strangely twinkling eye",
         slytherin: 50,
       },
       {
@@ -232,28 +232,28 @@ const questionBank = [
     title: "A troll has gone beserk in the Room of Hidden Things at Hogwarts. It is about to smash, crush and tear several items and treasures. In which order would you rescue these objects from the troll's club, if you could?",
     answers: [
       {
-        answer: "First, the broomsticks belonging to the students on the Quidditch Team. Then student records going back 1000 years. Finally, an old handwritten book describing ancient magic techniques.",
+        answer: "First, the broomsticks belonging to the students on the Quidditch Team. Then student records going back 1000 years. Finally, an old handwritten book, written in a language you don't recognize.",
         gryffindor: 50,
         hufflepuff: 50,
       },
       {
-        answer: "First, student records going back 1000 years. Then an old handwritten book describing ancient magic techniques. Finally, the broomsticks belonging to the students on the Quidditch Team",
+        answer: "First, student records going back 1000 years. Then an old handwritten book, written in a language you don't recognize. Finally, the broomsticks belonging to the students on the Quidditch Team",
         slytherin: 100,
       },
       {
-        answer: "First, an old handwritten book describing ancient magic techniques. Then the broomsticks belonging to the students on the Quidditch Team. Finally, student records going back 1000 years.",
+        answer: "First, an old handwritten book, written in a language you don't recognize. Then the broomsticks belonging to the students on the Quidditch Team. Finally, student records going back 1000 years.",
         ravenclaw: 100,
       },
       {
-        answer: "First, the broomsticks belonging to the students on the Quidditch Team. Then an old handwritten book describing ancient magic techniques. Finally, student records going back 1000 years.",
+        answer: "First, the broomsticks belonging to the students on the Quidditch Team. Then an old handwritten book, written in a language you don't recognize. Finally, student records going back 1000 years.",
         gryffindor: 100,
       },
       {
-        answer: "First student records going back 1000 years. Then, the broomsticks belonging to the students on the Quidditch Team. Finally, an old handwritten book describing ancient magic techniques.",
+        answer: "First student records going back 1000 years. Then, the broomsticks belonging to the students on the Quidditch Team. Finally, an old handwritten book, written in a language you don't recognize.",
         hufflepuff: 100,
       },
       {
-        answer: "First, an old handwritten book describing ancient magic techniques. Then student records going back 1000 years. Finally, the broomsticks belonging to the students on the Quidditch Team",
+        answer: "First, an old handwritten book, written in a language you don't recognize. Then student records going back 1000 years. Finally, the broomsticks belonging to the students on the Quidditch Team",
         ravenclaw: 50,
         slytherin: 50,
       }
@@ -263,7 +263,7 @@ const questionBank = [
     title: "Which of the following do you find most difficult to deal with?",
     answers: [
       {
-        answer: "Stress",
+        answer: "Being worried",
         hufflepuff: 50,
         ravenclaw: 50,
       },
@@ -437,7 +437,7 @@ const questionBank = [
         gryffindor: 100,
       },
       {
-        answer: "Politely deny it, and then turn the conversation around to talk about them",
+        answer: "Turn the conversation around to talk about them",
         hufflepuff: 100,
       }
     ]
@@ -458,7 +458,7 @@ const questionBank = [
         hufflepuff: 100,
       },
       {
-        answer: "You are being chased by something that you can't see. You scream but no sound comes out",
+        answer: "You are being chased by something that you can't see.",
         slytherin: 100,
       }
     ]
@@ -623,7 +623,7 @@ const questionBank = [
         ravenclaw: 50,
       },
       {
-        answer: "Exercise",
+        answer: "Spend some time outside",
         gryffindor: 50,
         slytherin: 50,
       },
@@ -633,7 +633,7 @@ const questionBank = [
         ravenclaw: 50,
       },
       {
-        answer: "Some cleaning or re-organizing around the house",
+        answer: "Some sort of project around the house",
         hufflepuff: 50,
         slytherin: 50,
       },
@@ -656,7 +656,7 @@ const questionBank = [
         hufflepuff: 100,
       },
       {
-        answer: "You haven't been spending enough time with them",
+        answer: "You blew off plans with them",
         slytherin: 100,
       },
       {
@@ -689,7 +689,7 @@ const questionBank = [
         ravenclaw: 50,
       },
       {
-        answer: "Wait out the conflict without getting involved",
+        answer: "Let them figure it out on their own",
         ravenclaw: 50,
         slytherin: 50,
       },
@@ -701,10 +701,10 @@ const questionBank = [
     ]
   },
   {
-    title: "You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass. Do you:",
+    title: "You are walking through the woods and come across a river blocking your path. There is an old, rickety bridge crossing the river, and you can't tell if it would support your weight all the way across. What do you do?",
     answers: [
       {
-        answer: "Try to get past the troll, even if it's more dangerous",
+        answer: "Try and cross the bridge, even if it might be more risky",
         gryffindor: 50,
         slytherin: 50,
       },
@@ -723,7 +723,7 @@ const questionBank = [
         slytherin: 100,
       },
       {
-        answer: "Tell them that you really want to stick with your schedule, but give them a copy of the schedule in case they want to join you.",
+        answer: "Tell them that you really want to stick with your schedule, but give them a copy of the schedule in case they want to do something similar.",
         ravenclaw: 100,
       },
       {

@@ -26,9 +26,10 @@ function App() {
   };
   const handleSubmit = event => {
     event.preventDefault(); // Stop from refreshing/redirecting the page
+    const version = "v0.1"
     const answers = findAnswers(event.target);
     const points = getPointTotals(answers);
-    firebase.firestore().collection('results').doc(name).set({answers, points}).then(() => {
+    firebase.firestore().collection('results').doc(name).set({version, answers, points}).then(() => {
       console.log("Just set data:");
       console.log(answers);
     });
