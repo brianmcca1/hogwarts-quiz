@@ -1,128 +1,128 @@
 const questionBank = [
-  {
-    title: "Dawn or  Dusk?",
-    answers: [
-      {
-        answer: "Dawn",
-        gryffindor: 50,
-        ravenclaw: 50
-      },
-      {
-        answer: "Dusk",
-        hufflepuff: 50,
-        slytherin: 50
-      }
-    ]
-  },
-  {
-    title: "Forest or River?",
-    answers: [
-      {
-        answer: "Forest",
-        gryffindor: 50,
-        ravenclaw: 50
-      },
-      {
-        answer: "River",
-        hufflepuff: 50,
-        slytherin: 50
-      }
-    ]
-  },
-  {
-    title: "Moon or Stars?",
-    answers: [
-      {
-        answer: "Moon",
-        ravenclaw: 50,
-        slytherin: 50
-      },
-      {
-        answer: "Stars",
-        gryffindor: 50,
-        hufflepuff: 50
-      }
-    ]
-  },
-  {
-    title: "Which of the following would you most hate people to call you?",
-    answers: [
-      {
-        answer: "Incapable",
-        slytherin: 100
-      },
-      {
-        answer: "Close-Minded",
-        ravenclaw: 100
-      },
-      {
-        answer: "Cowardly",
-        gryffindor: 100
-      },
-      {
-        answer: "Lazy",
-        hufflepuff: 100
-      }
-    ]
-  },
-  {
-    title: "When you  post on social media, how do you want your followers to  perceive you?",
-    answers: [
-      {
-        answer: "Fun",
-        hufflepuff: 100,
-      },
-      {
-        answer: "Adventurous",
-        gryffindor: 100,
-      },
-      {
-        answer: "Cultured",
-        slytherin: 100,
-      },
-      {
-        answer: "Supportive",
-        hufflepuff: 100,
-      },
-      {
-        answer: "Informed",
-        gryffindor: 100,
-      },
-      {
-        answer: "Accomplished",
-        slytherin: 100,
-      },
-      {
-        answer: "Artistic",
-        ravenclaw: 100,
-      },
-      {
-        answer: "Intelligent",
-        ravenclaw: 100,
-      }
-    ]
-  },
-  {
-    title: "How would you like to be known to history?",
-    answers: [
-      {
-        answer: "The wise",
-        ravenclaw: 100,
-      },
-      {
-        answer: "The kind",
-        hufflepuff: 100,
-      },
-      {
-        answer: "The exceptional",
-        slytherin: 100,
-      },
-      {
-        answer: "The virtuous",
-        gryffindor: 100,
-      },
-    ]
-  },
+  // {
+  //   title: "Dawn or  Dusk?",
+  //   answers: [
+  //     {
+  //       answer: "Dawn",
+  //       gryffindor: 50,
+  //       ravenclaw: 50
+  //     },
+  //     {
+  //       answer: "Dusk",
+  //       hufflepuff: 50,
+  //       slytherin: 50
+  //     }
+  //   ]
+  // },
+  // {
+  //   title: "Forest or River?",
+  //   answers: [
+  //     {
+  //       answer: "Forest",
+  //       gryffindor: 50,
+  //       ravenclaw: 50
+  //     },
+  //     {
+  //       answer: "River",
+  //       hufflepuff: 50,
+  //       slytherin: 50
+  //     }
+  //   ]
+  // },
+  // {
+  //   title: "Moon or Stars?",
+  //   answers: [
+  //     {
+  //       answer: "Moon",
+  //       ravenclaw: 50,
+  //       slytherin: 50
+  //     },
+  //     {
+  //       answer: "Stars",
+  //       gryffindor: 50,
+  //       hufflepuff: 50
+  //     }
+  //   ]
+  // },
+  // {
+  //   title: "Which of the following would you most hate people to call you?",
+  //   answers: [
+  //     {
+  //       answer: "Incapable",
+  //       slytherin: 100
+  //     },
+  //     {
+  //       answer: "Close-Minded",
+  //       ravenclaw: 100
+  //     },
+  //     {
+  //       answer: "Cowardly",
+  //       gryffindor: 100
+  //     },
+  //     {
+  //       answer: "Lazy",
+  //       hufflepuff: 100
+  //     }
+  //   ]
+  // },
+  // {
+  //   title: "When you  post on social media, how do you want your followers to  perceive you?",
+  //   answers: [
+  //     {
+  //       answer: "Fun",
+  //       hufflepuff: 100,
+  //     },
+  //     {
+  //       answer: "Adventurous",
+  //       gryffindor: 100,
+  //     },
+  //     {
+  //       answer: "Cultured",
+  //       slytherin: 100,
+  //     },
+  //     {
+  //       answer: "Supportive",
+  //       hufflepuff: 100,
+  //     },
+  //     {
+  //       answer: "Informed",
+  //       gryffindor: 100,
+  //     },
+  //     {
+  //       answer: "Accomplished",
+  //       slytherin: 100,
+  //     },
+  //     {
+  //       answer: "Artistic",
+  //       ravenclaw: 100,
+  //     },
+  //     {
+  //       answer: "Intelligent",
+  //       ravenclaw: 100,
+  //     }
+  //   ]
+  // },
+  // {
+  //   title: "How would you like to be known to history?",
+  //   answers: [
+  //     {
+  //       answer: "The wise",
+  //       ravenclaw: 100,
+  //     },
+  //     {
+  //       answer: "The kind",
+  //       hufflepuff: 100,
+  //     },
+  //     {
+  //       answer: "The exceptional",
+  //       slytherin: 100,
+  //     },
+  //     {
+  //       answer: "The virtuous",
+  //       gryffindor: 100,
+  //     },
+  //   ]
+  // },
   {
     title: "If you could have more of one of the following things in your Muggle life, which would you choose?",
     answers: [
@@ -152,7 +152,7 @@ const questionBank = [
         gryffindor: 100
       },
       {
-        answer: "City air on a summer night",
+        answer: "A cafe",
         slytherin: 100
       },
       {
@@ -165,27 +165,27 @@ const questionBank = [
       }
     ]
   },
-  {
-    title: "Four goblets are placed before you. Which would you drink?",
-    answers: [
-      {
-        answer: "The foaming, frothing, silvery liquid that sparkles as though containing ground diamonds.",
-        ravenclaw: 50,
-      },
-      {
-        answer: "The smooth, thick, richly purple drink that gives off a delicious smell of chocolate and plums.",
-        hufflepuff: 50,
-      },
-      {
-        answer: "The golden liquid so bright that it hurts the eye, and which makes sunspots dance all around the room.",
-        gryffindor: 50,
-      },
-      {
-        answer: "The mysterious black liquid that gleams like ink, and draws you in with a scent you can't quite describe",
-        slytherin: 50,
-      }
-    ]
-  },
+  // {
+  //   title: "Four goblets are placed before you. Which would you drink?",
+  //   answers: [
+  //     {
+  //       answer: "The foaming, frothing, silvery liquid that sparkles as though containing ground diamonds.",
+  //       ravenclaw: 50,
+  //     },
+  //     {
+  //       answer: "The smooth, thick, richly purple drink that gives off a delicious smell of chocolate and plums.",
+  //       hufflepuff: 50,
+  //     },
+  //     {
+  //       answer: "The golden liquid so bright that it hurts the eye, and which makes sunspots dance all around the room.",
+  //       gryffindor: 50,
+  //     },
+  //     {
+  //       answer: "The mysterious black liquid that gleams like ink, and draws you in with a scent you can't quite describe",
+  //       slytherin: 50,
+  //     }
+  //   ]
+  // },
   {
     title: "You enter an enchanted garden. What would you be most curious to examine first?",
     answers: [
@@ -207,27 +207,27 @@ const questionBank = [
       }
     ]
   },
-  {
-    title: "Four boxes are placed before you. Which would you try to open?",
-    answers: [
-      {
-        answer: "The small tortoiseshell box, embellished with gold, inside which some small creature seems to be squeaking.",
-        hufflepuff: 100,
-      },
-      {
-        answer: "The gleaming emerald box with a silver lock and key, marked with a mysterious rune that you know to be the mark of a powerful witch or wizard",
-        slytherin: 100,
-      },
-      {
-        answer: "The ornate golden casket, standing on clawed feet, whose inscription warns that secret knowledge lies within.",
-        ravenclaw: 100,
-      },
-      {
-        answer: "The small pewter box, unassuming and plain, with a scratched message upon it that reads ‘I open only for the most honorable'",
-        gryffindor: 100,
-      }
-    ]
-  },
+  // {
+  //   title: "Four boxes are placed before you. Which would you try to open?",
+  //   answers: [
+  //     {
+  //       answer: "The small tortoiseshell box, embellished with gold, inside which some small creature seems to be squeaking.",
+  //       hufflepuff: 100,
+  //     },
+  //     {
+  //       answer: "The gleaming emerald box with a silver lock and key, marked with a mysterious rune that you know to be the mark of a powerful witch or wizard",
+  //       slytherin: 100,
+  //     },
+  //     {
+  //       answer: "The ornate golden casket, standing on clawed feet, whose inscription warns that secret knowledge lies within.",
+  //       ravenclaw: 100,
+  //     },
+  //     {
+  //       answer: "The small pewter box, unassuming and plain, with a scratched message upon it that reads ‘I open only for the most honorable'",
+  //       gryffindor: 100,
+  //     }
+  //   ]
+  // },
   {
     title: "A troll has gone beserk in the Room of Hidden Things at Hogwarts. It is about to smash, crush and tear several items and treasures. In which order would you rescue these objects from the troll's club, if you could?",
     answers: [
@@ -294,133 +294,133 @@ const questionBank = [
       }
     ]
   },
-  {
-    title: "If you could have any power, which would you choose?",
-    answers: [
-      {
-        answer: "Power to move objects with your mind",
-        ravenclaw: 50,
-        slytherin: 50,
-      },
-      {
-        answer: "Power of super speed",
-        gryffindor: 50,
-        slytherin: 50,
-      },
-      {
-        answer: "Power of superhuman strength",
-        hufflepuff: 50,
-        slytherin: 50,
-      },
-      {
-        answer: "Power to speak to animals",
-        hufflepuff: 50,
-        ravenclaw: 50,
-      },
-      {
-        answer: "Power of elasticity (super stretching)",
-        gryffindor: 50,
-        hufflepuff: 50,
-      },
-      {
-        answer: "Power to experience the past",
-        gryffindor: 50,
-        ravenclaw: 50,
-      },
-    ]
-  },
-  {
-    title: "What are you most looking forward to learning about at Hogwarts?",
-    answers: [
-      {
-        answer: "Apparition and Disapparition",
-        ravenclaw: 50,
-        slytherin: 50,
-      },
-      {
-        answer: "Secret passages in the castle",
-        gryffindor: 75,
-        slytherin: 25,
-      },
-      {
-        answer: "The Room of Requirement",
-        ravenclaw: 25,
-        slytherin: 75,
-      },
-      {
-        answer: "Flying on a broomstick",
-        gryffindor: 100,
-      },
-      {
-        answer: "Magical communities like Hogsmeade",
-        hufflepuff: 100,
-      },
-      {
-        answer: "All about the other witches and wizards in my classes",
-        hufflepuff: 75,
-        slytherin: 25,
-      },
-      {
-        answer: "Everything about your classes!",
-        ravenclaw: 100,
-      }
-    ]
-  },
-  {
-    title: "Which of these disciplines are you most excited to learn about at Hogwarts?",
-    answers: [
-      {
-        answer: "Transfiguration",
-        ravenclaw: 100,
-      },
-      {
-        answer: "Potions",
-        slytherin: 100,
-      },
-      {
-        answer: "Defense Against the Dark Arts",
-        gryffindor: 100,
-      },
-      {
-        answer: "Care of Magical Creatures",
-        hufflepuff: 100,
-      }
-    ]
-  },
-  {
-    title: "Which of the following would you most like to study?",
-    answers: [
-      {
-        answer: "Centaurs",
-        gryffindor: 50,
-        ravenclaw: 50,
-      },
-      {
-        answer: "Sphinxes",
-        ravenclaw: 75,
-        slytherin: 25,
-      },
-      {
-        answer: "Dementors",
-        hufflepuff: 50,
-        slytherin: 50,
-      },
-      {
-        answer: "Ghosts",
-        hufflepuff: 50,
-        ravenclaw: 50,
-      },
-      {
-        answer: "Giants",
-        slytherin: 100,
-      },
-      {
-        answer: "Werewolves",
-        gryffindor: 50,
-        hufflepuff: 50,
-      }
-    ]
-  },
+  // {
+  //   title: "If you could have any power, which would you choose?",
+  //   answers: [
+  //     {
+  //       answer: "Power to move objects with your mind",
+  //       ravenclaw: 50,
+  //       slytherin: 50,
+  //     },
+  //     {
+  //       answer: "Power of super speed",
+  //       gryffindor: 50,
+  //       slytherin: 50,
+  //     },
+  //     {
+  //       answer: "Power of superhuman strength",
+  //       hufflepuff: 50,
+  //       slytherin: 50,
+  //     },
+  //     {
+  //       answer: "Power to speak to animals",
+  //       hufflepuff: 50,
+  //       ravenclaw: 50,
+  //     },
+  //     {
+  //       answer: "Power of elasticity (super stretching)",
+  //       gryffindor: 50,
+  //       hufflepuff: 50,
+  //     },
+  //     {
+  //       answer: "Power to experience the past",
+  //       gryffindor: 50,
+  //       ravenclaw: 50,
+  //     },
+  //   ]
+  // },
+  // {
+  //   title: "What are you most looking forward to learning about at Hogwarts?",
+  //   answers: [
+  //     {
+  //       answer: "Apparition and Disapparition",
+  //       ravenclaw: 50,
+  //       slytherin: 50,
+  //     },
+  //     {
+  //       answer: "Secret passages in the castle",
+  //       gryffindor: 75,
+  //       slytherin: 25,
+  //     },
+  //     {
+  //       answer: "The Room of Requirement",
+  //       ravenclaw: 25,
+  //       slytherin: 75,
+  //     },
+  //     {
+  //       answer: "Flying on a broomstick",
+  //       gryffindor: 100,
+  //     },
+  //     {
+  //       answer: "Magical communities like Hogsmeade",
+  //       hufflepuff: 100,
+  //     },
+  //     {
+  //       answer: "All about the other witches and wizards in my classes",
+  //       hufflepuff: 75,
+  //       slytherin: 25,
+  //     },
+  //     {
+  //       answer: "Everything about your classes!",
+  //       ravenclaw: 100,
+  //     }
+  //   ]
+  // },
+  // {
+  //   title: "Which of these disciplines are you most excited to learn about at Hogwarts?",
+  //   answers: [
+  //     {
+  //       answer: "Transfiguration",
+  //       ravenclaw: 100,
+  //     },
+  //     {
+  //       answer: "Potions",
+  //       slytherin: 100,
+  //     },
+  //     {
+  //       answer: "Defense Against the Dark Arts",
+  //       gryffindor: 100,
+  //     },
+  //     {
+  //       answer: "Care of Magical Creatures",
+  //       hufflepuff: 100,
+  //     }
+  //   ]
+  // },
+  // {
+  //   title: "Which of the following would you most like to study?",
+  //   answers: [
+  //     {
+  //       answer: "Centaurs",
+  //       gryffindor: 50,
+  //       ravenclaw: 50,
+  //     },
+  //     {
+  //       answer: "Sphinxes",
+  //       ravenclaw: 75,
+  //       slytherin: 25,
+  //     },
+  //     {
+  //       answer: "Dementors",
+  //       hufflepuff: 50,
+  //       slytherin: 50,
+  //     },
+  //     {
+  //       answer: "Ghosts",
+  //       hufflepuff: 50,
+  //       ravenclaw: 50,
+  //     },
+  //     {
+  //       answer: "Giants",
+  //       slytherin: 100,
+  //     },
+  //     {
+  //       answer: "Werewolves",
+  //       gryffindor: 50,
+  //       hufflepuff: 50,
+  //     }
+  //   ]
+  // },
   {
     title: "A Muggle confronts you and says that they are sure you are a witch/wizard. Do you:",
     answers: [
@@ -463,152 +463,152 @@ const questionBank = [
       }
     ]
   },
-  {
-    title: "If you were attending hogwarts, which magical creature would you be most interested in studying?",
-    answers: [
-      {
-        answer: "Thestral",
-        hufflepuff: 50,
-        ravenclaw: 50,
-      },
-      {
-        answer: "Phoenix",
-        gryffindor: 50,
-        ravenclaw: 50,
-      },
-      {
-        answer: "Hippogriff",
-        gryffindor: 50,
-        hufflepuff: 50,
-      },
-      {
-        answer: "Niffler",
-        hufflepuff: 50,
-        slytherin: 50,
-      },
-      {
-        answer: "Unicorn",
-        ravenclaw: 50,
-        slytherin: 50,
-      },
-      {
-        answer: "Dragon",
-        gryffindor: 50,
-        slytherin: 50,
-      }
-    ]
-  },
-  {
-    title: "Black or white?",
-    answers: [
-      {
-        answer: "Black",
-        gryffindor: 50,
-        slytherin: 50,
-      },
-      {
-        answer: "White",
-        hufflepuff: 50,
-        ravenclaw: 50,
-      }
-    ]
-  },
-  {
-    title: "Heads or tails?",
-    answers: [
-      {
-        answer: "Heads",
-        hufflepuff: 50,
-        ravenclaw: 50,
-      },
-      {
-        answer: "Tails",
-        gryffindor: 50,
-        slytherin: 50,
-      },
-    ]
-  },
-  {
-    title: "Left or right?",
-    answers: [
-      {
-        answer: "Left",
-        slytherin: 50,
-        ravenclaw: 50,
-      },
-      {
-        answer: "Right",
-        gryffindor: 50,
-        hufflepuff: 50,
-      },
-    ]
-  },
-  {
-    title: "The sorting hat takes your opinion into consideration. What house do you feel you belong in?",
-    answers: [
-      {
-        answer: "Gryffindor",
-        gryffindor: 250,
-      },
-      {
-        answer: "Ravenclaw",
-        ravenclaw: 250,
-      },
-      {
-        answer: "Hufflepuff",
-        hufflepuff: 250,
-      },
-      {
-        answer: "Slytherin",
-        slytherin: 250,
-      }
-    ]
-  },
-  {
-    title: "Which of these Dumbledore quotations speak to you?",
-    answers: [
-      {
-        answer: '"Pity the living, and above all, those who live without love."',
-        hufflepuff: 100,
-      },
-      {
-        answer: '"It’s the unknown we fear when we look upon death and darkness, nothing more."',
-        ravenclaw: 100,
-      },
-      {
-        answer: '"It matters not what someone is born, but what they grow to be."',
-        slytherin: 100,
-      },
-      {
-        answer: '"It is our choices that show what we truly are far more than our abilities"',
-        gryffindor: 100,
-      }
-    ]
-  },
-  {
-    title: "The first Quidditch match of the season is approaching, and you can't wait to get involved. What role are you playing?",
-    answers: [
-      {
-        answer: "Seeker",
-        gryffindor: 25,
-        slytherin: 75,
-      },
-      {
-        answer: "Chaser",
-        hufflepuff: 25,
-        ravenclaw: 75,
-      },
-      {
-        answer: "Beater",
-        gryffindor: 75,
-        slytherin: 25,
-      },
-      {
-        answer: "Keeper",
-        hufflepuff: 100,
-      }
-    ]
-  },
+  // {
+  //   title: "If you were attending hogwarts, which magical creature would you be most interested in studying?",
+  //   answers: [
+  //     {
+  //       answer: "Thestral",
+  //       hufflepuff: 50,
+  //       ravenclaw: 50,
+  //     },
+  //     {
+  //       answer: "Phoenix",
+  //       gryffindor: 50,
+  //       ravenclaw: 50,
+  //     },
+  //     {
+  //       answer: "Hippogriff",
+  //       gryffindor: 50,
+  //       hufflepuff: 50,
+  //     },
+  //     {
+  //       answer: "Niffler",
+  //       hufflepuff: 50,
+  //       slytherin: 50,
+  //     },
+  //     {
+  //       answer: "Unicorn",
+  //       ravenclaw: 50,
+  //       slytherin: 50,
+  //     },
+  //     {
+  //       answer: "Dragon",
+  //       gryffindor: 50,
+  //       slytherin: 50,
+  //     }
+  //   ]
+  // },
+  // {
+  //   title: "Black or white?",
+  //   answers: [
+  //     {
+  //       answer: "Black",
+  //       gryffindor: 50,
+  //       slytherin: 50,
+  //     },
+  //     {
+  //       answer: "White",
+  //       hufflepuff: 50,
+  //       ravenclaw: 50,
+  //     }
+  //   ]
+  // },
+  // {
+  //   title: "Heads or tails?",
+  //   answers: [
+  //     {
+  //       answer: "Heads",
+  //       hufflepuff: 50,
+  //       ravenclaw: 50,
+  //     },
+  //     {
+  //       answer: "Tails",
+  //       gryffindor: 50,
+  //       slytherin: 50,
+  //     },
+  //   ]
+  // },
+  // {
+  //   title: "Left or right?",
+  //   answers: [
+  //     {
+  //       answer: "Left",
+  //       slytherin: 50,
+  //       ravenclaw: 50,
+  //     },
+  //     {
+  //       answer: "Right",
+  //       gryffindor: 50,
+  //       hufflepuff: 50,
+  //     },
+  //   ]
+  // },
+  // {
+  //   title: "The sorting hat takes your opinion into consideration. What house do you feel you belong in?",
+  //   answers: [
+  //     {
+  //       answer: "Gryffindor",
+  //       gryffindor: 250,
+  //     },
+  //     {
+  //       answer: "Ravenclaw",
+  //       ravenclaw: 250,
+  //     },
+  //     {
+  //       answer: "Hufflepuff",
+  //       hufflepuff: 250,
+  //     },
+  //     {
+  //       answer: "Slytherin",
+  //       slytherin: 250,
+  //     }
+  //   ]
+  // },
+  // {
+  //   title: "Which of these Dumbledore quotations speak to you?",
+  //   answers: [
+  //     {
+  //       answer: '"Pity the living, and above all, those who live without love."',
+  //       hufflepuff: 100,
+  //     },
+  //     {
+  //       answer: '"It’s the unknown we fear when we look upon death and darkness, nothing more."',
+  //       ravenclaw: 100,
+  //     },
+  //     {
+  //       answer: '"It matters not what someone is born, but what they grow to be."',
+  //       slytherin: 100,
+  //     },
+  //     {
+  //       answer: '"It is our choices that show what we truly are far more than our abilities"',
+  //       gryffindor: 100,
+  //     }
+  //   ]
+  // },
+  // {
+  //   title: "The first Quidditch match of the season is approaching, and you can't wait to get involved. What role are you playing?",
+  //   answers: [
+  //     {
+  //       answer: "Seeker",
+  //       gryffindor: 25,
+  //       slytherin: 75,
+  //     },
+  //     {
+  //       answer: "Chaser",
+  //       hufflepuff: 25,
+  //       ravenclaw: 75,
+  //     },
+  //     {
+  //       answer: "Beater",
+  //       gryffindor: 75,
+  //       slytherin: 25,
+  //     },
+  //     {
+  //       answer: "Keeper",
+  //       hufflepuff: 100,
+  //     }
+  //   ]
+  // },
   {
     title: "You find yourself with some unexpected free time alone. What do you do?",
     answers: [
@@ -736,27 +736,27 @@ const questionBank = [
       }
     ]
   },
-  {
-    title: "Oh no! After young Harry Potter defeated He-Who-Must-Not-Be-Named, the Ministry of Magic has its hands full. There are Dark Wizards on the run, wizards and Muggles alike have been injured by magical accidents, and Muggles have even noticed an influx of owls during the day. What are you doing to help respond to the crisis?",
-    answers: [
-      {
-        answer: "You're on the Muggle-Worthy Excuse Committee, a team tasked with researching Muggle science and coming up with a plausible explanation for the owls to publish in the newspapers",
-        ravenclaw: 100,
-      },
-      {
-        answer: "You're the Head of the team, leading the task force and coordinating with other Ministry departments to increase your manpower",
-        slytherin: 100,
-      },
-      {
-        answer: "You are on the Catastrophe Response Committee, fixing property damage and/or healing injuries from magical duels or celebrations gone out of hand",
-        hufflepuff: 100,
-      },
-      {
-        answer: "You're an Auror, rounding up Dark Wizards on the loose",
-        gryffindor: 100,
-      }
-    ]
-  }
+  // {
+  //   title: "Oh no! After young Harry Potter defeated He-Who-Must-Not-Be-Named, the Ministry of Magic has its hands full. There are Dark Wizards on the run, wizards and Muggles alike have been injured by magical accidents, and Muggles have even noticed an influx of owls during the day. What are you doing to help respond to the crisis?",
+  //   answers: [
+  //     {
+  //       answer: "You're on the Muggle-Worthy Excuse Committee, a team tasked with researching Muggle science and coming up with a plausible explanation for the owls to publish in the newspapers",
+  //       ravenclaw: 100,
+  //     },
+  //     {
+  //       answer: "You're the Head of the team, leading the task force and coordinating with other Ministry departments to increase your manpower",
+  //       slytherin: 100,
+  //     },
+  //     {
+  //       answer: "You are on the Catastrophe Response Committee, fixing property damage and/or healing injuries from magical duels or celebrations gone out of hand",
+  //       hufflepuff: 100,
+  //     },
+  //     {
+  //       answer: "You're an Auror, rounding up Dark Wizards on the loose",
+  //       gryffindor: 100,
+  //     }
+  //   ]
+  // }
   ];
   
   export default questionBank;
