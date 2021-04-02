@@ -10,6 +10,7 @@ import "firebase/auth";
 import "firebase/firestore";
 
 function App() {
+  const VERSION = "v0.1.1"
   let name = "";
   const [pointTotals, setPointTotals] = useState({});
   const [submittedAnswers, setSubmittedAnswers] = useState(false);
@@ -27,10 +28,9 @@ function App() {
   };
   const handleSubmit = event => {
     event.preventDefault(); // Stop from refreshing/redirecting the page
-    const version = "v0.1"
     const answers = findAnswers(event.target);
     const points = getPointTotals(answers);
-    firebase.firestore().collection('results').doc(`${version}: ${name}`).set({version, answers, points}).then(() => {
+    firebase.firestore().collection('results').doc(`${VERSION}: ${name}`).set({version: VERSION, answers, points}).then(() => {
       console.log("Just set data:");
       console.log(answers);
     });
