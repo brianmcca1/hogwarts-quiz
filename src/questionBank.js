@@ -44,27 +44,27 @@ const questionBank = [
   //     }
   //   ]
   // },
-  // {
-  //   title: "Which of the following would you most hate people to call you?",
-  //   answers: [
-  //     {
-  //       answer: "Incapable",
-  //       slytherin: 100
-  //     },
-  //     {
-  //       answer: "Close-Minded",
-  //       ravenclaw: 100
-  //     },
-  //     {
-  //       answer: "Cowardly",
-  //       gryffindor: 100
-  //     },
-  //     {
-  //       answer: "Lazy",
-  //       hufflepuff: 100
-  //     }
-  //   ]
-  // },
+  {
+    title: "Which of the following would you most hate people to call you?",
+    answers: [
+      {
+        answer: "Incapable",
+        slytherin: 100
+      },
+      {
+        answer: "Close-Minded",
+        ravenclaw: 100
+      },
+      {
+        answer: "Cowardly",
+        gryffindor: 100
+      },
+      {
+        answer: "Lazy",
+        hufflepuff: 100
+      }
+    ]
+  },
   // {
   //   title: "When you  post on social media, how do you want your followers to  perceive you?",
   //   answers: [
