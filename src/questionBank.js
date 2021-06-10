@@ -52,7 +52,7 @@ const questionBank = [
         slytherin: 100
       },
       {
-        answer: "Close-Minded",
+        answer: "Ignorant",
         ravenclaw: 100
       },
       {
@@ -127,7 +127,7 @@ const questionBank = [
     title: "If you could have more of one of the following things in your Muggle life, which would you choose?",
     answers: [
       {
-        answer: "Time",
+        answer: "Patience",
         hufflepuff: 100
       },
       {

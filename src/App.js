@@ -10,7 +10,7 @@ import "firebase/auth";
 import "firebase/firestore";
 
 function App() {
-  const VERSION = "v0.1.1"
+  const VERSION = "v0.2"
   let name = "";
   const [pointTotals, setPointTotals] = useState({});
   const [submittedAnswers, setSubmittedAnswers] = useState(false);
