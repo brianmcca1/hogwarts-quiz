@@ -450,7 +450,7 @@ const questionBank = [
         ravenclaw: 100,
       },
       {
-        answer: "You are trapped in a dark windowless cell, with no room to stand. An eye peers in the keyhole.",
+        answer: "You are trapped in a box with no room to stand. An eye peers through the keyhole.",
         gryffindor: 100,
       },
       {
