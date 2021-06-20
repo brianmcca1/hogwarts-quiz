@@ -144,27 +144,27 @@ const questionBank = [
       }
     ]
   },
-  {
-    title: "Once every century, the Flutterby bush produces flowers that adapt their scent to attract the unwary. If it lured you, it would smell of:",
-    answers: [
-      {
-        answer: "Cold mountain air",
-        gryffindor: 100
-      },
-      {
-        answer: "A cafe",
-        slytherin: 100
-      },
-      {
-        answer: "A bookstore",
-        ravenclaw: 100
-      },
-      {
-        answer: "Home",
-        hufflepuff: 100
-      }
-    ]
-  },
+  // {
+  //   title: "Once every century, the Flutterby bush produces flowers that adapt their scent to attract the unwary. If it lured you, it would smell of:",
+  //   answers: [
+  //     {
+  //       answer: "Cold mountain air",
+  //       gryffindor: 100
+  //     },
+  //     {
+  //       answer: "A cafe",
+  //       slytherin: 100
+  //     },
+  //     {
+  //       answer: "A bookstore",
+  //       ravenclaw: 100
+  //     },
+  //     {
+  //       answer: "Home",
+  //       hufflepuff: 100
+  //     }
+  //   ]
+  // },
   // {
   //   title: "Four goblets are placed before you. Which would you drink?",
   //   answers: [
@@ -186,27 +186,27 @@ const questionBank = [
   //     }
   //   ]
   // },
-  {
-    title: "You enter an enchanted garden. What would you be most curious to examine first?",
-    answers: [
-      {
-        answer: "The silver leafed tree bearing golden apples",
-        ravenclaw: 50,
-      },
-      {
-        answer: "The fat red toadstools that appear to be talking to each other",
-        hufflepuff: 50,
-      },
-      {
-        answer: "The statue of an old wizard with a strangely twinkling eye",
-        slytherin: 50,
-      },
-      {
-        answer: "The mouth of a cave too dark to see into, but with faint music coming from within",
-        gryffindor:  50,
-      }
-    ]
-  },
+  // {
+  //   title: "You enter an enchanted garden. What would you be most curious to examine first?",
+  //   answers: [
+  //     {
+  //       answer: "The silver leafed tree bearing golden apples",
+  //       ravenclaw: 50,
+  //     },
+  //     {
+  //       answer: "The fat red toadstools that appear to be talking to each other",
+  //       hufflepuff: 50,
+  //     },
+  //     {
+  //       answer: "The statue of an old wizard with a strangely twinkling eye",
+  //       slytherin: 50,
+  //     },
+  //     {
+  //       answer: "The mouth of a cave too dark to see into, but with faint music coming from within",
+  //       gryffindor:  50,
+  //     }
+  //   ]
+  // },
   // {
   //   title: "Four boxes are placed before you. Which would you try to open?",
   //   answers: [
@@ -259,41 +259,41 @@ const questionBank = [
       }
     ]
   },
-  {
-    title: "Which of the following do you find most difficult to deal with?",
-    answers: [
-      {
-        answer: "Being worried",
-        hufflepuff: 50,
-        ravenclaw: 50,
-      },
-      {
-        answer: "Being judged",
-        hufflepuff: 50,
-        slytherin: 50,
-      },
-      {
-        answer: "Loneliness",
-        gryffindor: 50,
-        hufflepuff: 50,
-      },
-      {
-        answer: "Being micromanaged",
-        gryffindor: 50,
-        slytherin: 50,
-      },
-      {
-        answer: "Being lied to",
-        gryffindor: 50,
-        ravenclaw: 50,
-      },
-      {
-        answer: "Being ignored",
-        ravenclaw: 50,
-        slytherin: 50,
-      }
-    ]
-  },
+  // {
+  //   title: "Which of the following do you find most difficult to deal with?",
+  //   answers: [
+  //     {
+  //       answer: "Being worried",
+  //       hufflepuff: 50,
+  //       ravenclaw: 50,
+  //     },
+  //     {
+  //       answer: "Being judged",
+  //       hufflepuff: 50,
+  //       slytherin: 50,
+  //     },
+  //     {
+  //       answer: "Loneliness",
+  //       gryffindor: 50,
+  //       hufflepuff: 50,
+  //     },
+  //     {
+  //       answer: "Being micromanaged",
+  //       gryffindor: 50,
+  //       slytherin: 50,
+  //     },
+  //     {
+  //       answer: "Being lied to",
+  //       gryffindor: 50,
+  //       ravenclaw: 50,
+  //     },
+  //     {
+  //       answer: "Being ignored",
+  //       ravenclaw: 50,
+  //       slytherin: 50,
+  //     }
+  //   ]
+  // },
   // {
   //   title: "If you could have any power, which would you choose?",
   //   answers: [
@@ -421,27 +421,27 @@ const questionBank = [
   //     }
   //   ]
   // },
-  {
-    title: "A Muggle confronts you and says that they are sure you are a witch/wizard. Do you:",
-    answers: [
-      {
-        answer: "Spend a long time trying to convince them otherwise",
-        ravenclaw: 100,
-      },
-      {
-        answer: "Flatly deny it and walk away",
-        slytherin: 100,
-      },
-      {
-        answer: "Agree and walk away, leaving them to wonder whether you're bluffing",
-        gryffindor: 100,
-      },
-      {
-        answer: "Turn the conversation around to talk about them",
-        hufflepuff: 100,
-      }
-    ]
-  },
+  // {
+  //   title: "A Muggle confronts you and says that they are sure you are a witch/wizard. Do you:",
+  //   answers: [
+  //     {
+  //       answer: "Spend a long time trying to convince them otherwise",
+  //       ravenclaw: 100,
+  //     },
+  //     {
+  //       answer: "Flatly deny it and walk away",
+  //       slytherin: 100,
+  //     },
+  //     {
+  //       answer: "Agree and walk away, leaving them to wonder whether you're bluffing",
+  //       gryffindor: 100,
+  //     },
+  //     {
+  //       answer: "Turn the conversation around to talk about them",
+  //       hufflepuff: 100,
+  //     }
+  //   ]
+  // },
   {
     title: "Which nightmare would frighten you most?",
     answers: [
@@ -609,62 +609,62 @@ const questionBank = [
   //     }
   //   ]
   // },
-  {
-    title: "You find yourself with some unexpected free time alone. What do you do?",
-    answers: [
-      {
-        answer: "Call a friend to catch up",
-        gryffindor: 50,
-        hufflepuff: 50,
-      },
-      {
-        answer: "Work on a passion project",
-        gryffindor: 50,
-        ravenclaw: 50,
-      },
-      {
-        answer: "Spend some time outside",
-        gryffindor: 50,
-        slytherin: 50,
-      },
-      {
-        answer: "Work on a creative hobby",
-        hufflepuff: 50,
-        ravenclaw: 50,
-      },
-      {
-        answer: "Some sort of project around the house",
-        hufflepuff: 50,
-        slytherin: 50,
-      },
-      {
-        answer: "Read a book",
-        ravenclaw: 50,
-        slytherin: 50,
-      }
-    ]
-  },
-  {
-    title: "A loved one is upset with you. Why?",
-    answers: [
-      {
-        answer: "A small disagreement spiraled out of control because you wouldn't admit that you were wrong",
-        gryffindor: 100,
-      },
-      {
-        answer: "You were being a pushover",
-        hufflepuff: 100,
-      },
-      {
-        answer: "You blew off plans with them",
-        slytherin: 100,
-      },
-      {
-        answer: "They are frustrated because you've been acting like a know-it-all",
-        ravenclaw: 100,
-      }
-    ]
-  },
+  // {
+  //   title: "You find yourself with some unexpected free time alone. What do you do?",
+  //   answers: [
+  //     {
+  //       answer: "Call a friend to catch up",
+  //       gryffindor: 50,
+  //       hufflepuff: 50,
+  //     },
+  //     {
+  //       answer: "Work on a passion project",
+  //       gryffindor: 50,
+  //       ravenclaw: 50,
+  //     },
+  //     {
+  //       answer: "Spend some time outside",
+  //       gryffindor: 50,
+  //       slytherin: 50,
+  //     },
+  //     {
+  //       answer: "Work on a creative hobby",
+  //       hufflepuff: 50,
+  //       ravenclaw: 50,
+  //     },
+  //     {
+  //       answer: "Some sort of project around the house",
+  //       hufflepuff: 50,
+  //       slytherin: 50,
+  //     },
+  //     {
+  //       answer: "Read a book",
+  //       ravenclaw: 50,
+  //       slytherin: 50,
+  //     }
+  //   ]
+  // },
+  // {
+  //   title: "A loved one is upset with you. Why?",
+  //   answers: [
+  //     {
+  //       answer: "A small disagreement spiraled out of control because you wouldn't admit that you were wrong",
+  //       gryffindor: 100,
+  //     },
+  //     {
+  //       answer: "You were being a pushover",
+  //       hufflepuff: 100,
+  //     },
+  //     {
+  //       answer: "You blew off plans with them",
+  //       slytherin: 100,
+  //     },
+  //     {
+  //       answer: "They are frustrated because you've been acting like a know-it-all",
+  //       ravenclaw: 100,
+  //     }
+  //   ]
+  // },
   {
     title: "Two of your friends are fighting with each other. What do you do?",
     answers: [
@@ -700,21 +700,21 @@ const questionBank = [
       }
     ]
   },
-  {
-    title: "You are walking through the woods and come across a river blocking your path. There is an old, rickety bridge crossing the river, and you can't tell if it would support your weight all the way across. What do you do?",
-    answers: [
-      {
-        answer: "Try and cross the bridge, even if it might be more risky",
-        gryffindor: 50,
-        slytherin: 50,
-      },
-      {
-        answer: "Try to find another way around, even if you might not succeed",
-        hufflepuff: 50,
-        ravenclaw: 50,
-      }
-    ]
-  },
+  // {
+  //   title: "You are walking through the woods and come across a river blocking your path. There is an old, rickety bridge crossing the river, and you can't tell if it would support your weight all the way across. What do you do?",
+  //   answers: [
+  //     {
+  //       answer: "Try and cross the bridge, even if it might be more risky",
+  //       gryffindor: 50,
+  //       slytherin: 50,
+  //     },
+  //     {
+  //       answer: "Try to find another way around, even if you might not succeed",
+  //       hufflepuff: 50,
+  //       ravenclaw: 50,
+  //     }
+  //   ]
+  // },
   {
     title: "You're training for the Scotland Sweeper- a broomstick marathon across the whole country of Scotland. You are determined to get a personal best time, and have created a training schedule to allow you to achieve this goal. A friend, who is much slower than you, signs up for the Sweeper too, and asks if you can train together. You know that training with the friend will slow you down. What do you do? ",
     answers: [
