@@ -228,37 +228,37 @@ const questionBank = [
   //     }
   //   ]
   // },
-  {
-    title: "A troll has gone beserk in the Room of Hidden Things at Hogwarts. It is about to smash, crush and tear several items and treasures. In which order would you rescue these objects from the troll's club, if you could?",
-    answers: [
-      {
-        answer: "First, the broomsticks belonging to the students on the Quidditch Team. Then a stack of letters that were mailed to students from home. Finally, an old handwritten book, written in a language you don't recognize.",
-        gryffindor: 50,
-        hufflepuff: 50,
-      },
-      {
-        answer: "First, a stack of letters that were mailed to students from home. Then an old handwritten book, written in a language you don't recognize. Finally, the broomsticks belonging to the students on the Quidditch Team.",
-        slytherin: 100,
-      },
-      {
-        answer: "First, an old handwritten book, written in a language you don't recognize. Then the broomsticks belonging to the students on the Quidditch Team. Finally, a stack of letters that were mailed to students from home.",
-        ravenclaw: 100,
-      },
-      {
-        answer: "First, the broomsticks belonging to the students on the Quidditch Team. Then an old handwritten book, written in a language you don't recognize. Finally, a stack of letters that were mailed to students from home.",
-        gryffindor: 100,
-      },
-      {
-        answer: "First, a stack of letters that were mailed to students from home. Then, the broomsticks belonging to the students on the Quidditch Team. Finally, an old handwritten book, written in a language you don't recognize.",
-        hufflepuff: 100,
-      },
-      {
-        answer: "First, an old handwritten book, written in a language you don't recognize. Then a stack of letters that were mailed to students from home. Finally, the broomsticks belonging to the students on the Quidditch Team.",
-        ravenclaw: 50,
-        slytherin: 50,
-      }
-    ]
-  },
+  // {
+  //   title: "A troll has gone beserk in the Room of Hidden Things at Hogwarts. It is about to smash, crush and tear several items and treasures. In which order would you rescue these objects from the troll's club, if you could?",
+  //   answers: [
+  //     {
+  //       answer: "First, the broomsticks belonging to the students on the Quidditch Team. Then a stack of letters that were mailed to students from home. Finally, an old handwritten book, written in a language you don't recognize.",
+  //       gryffindor: 50,
+  //       hufflepuff: 50,
+  //     },
+  //     {
+  //       answer: "First, a stack of letters that were mailed to students from home. Then an old handwritten book, written in a language you don't recognize. Finally, the broomsticks belonging to the students on the Quidditch Team.",
+  //       slytherin: 100,
+  //     },
+  //     {
+  //       answer: "First, an old handwritten book, written in a language you don't recognize. Then the broomsticks belonging to the students on the Quidditch Team. Finally, a stack of letters that were mailed to students from home.",
+  //       ravenclaw: 100,
+  //     },
+  //     {
+  //       answer: "First, the broomsticks belonging to the students on the Quidditch Team. Then an old handwritten book, written in a language you don't recognize. Finally, a stack of letters that were mailed to students from home.",
+  //       gryffindor: 100,
+  //     },
+  //     {
+  //       answer: "First, a stack of letters that were mailed to students from home. Then, the broomsticks belonging to the students on the Quidditch Team. Finally, an old handwritten book, written in a language you don't recognize.",
+  //       hufflepuff: 100,
+  //     },
+  //     {
+  //       answer: "First, an old handwritten book, written in a language you don't recognize. Then a stack of letters that were mailed to students from home. Finally, the broomsticks belonging to the students on the Quidditch Team.",
+  //       ravenclaw: 50,
+  //       slytherin: 50,
+  //     }
+  //   ]
+  // },
   // {
   //   title: "Which of the following do you find most difficult to deal with?",
   //   answers: [
@@ -644,32 +644,32 @@ const questionBank = [
   //     }
   //   ]
   // },
-  // {
-  //   title: "A loved one is upset with you. Why?",
-  //   answers: [
-  //     {
-  //       answer: "A small disagreement spiraled out of control because you wouldn't admit that you were wrong",
-  //       gryffindor: 100,
-  //     },
-  //     {
-  //       answer: "You were being a pushover",
-  //       hufflepuff: 100,
-  //     },
-  //     {
-  //       answer: "You blew off plans with them",
-  //       slytherin: 100,
-  //     },
-  //     {
-  //       answer: "They are frustrated because you've been acting like a know-it-all",
-  //       ravenclaw: 100,
-  //     }
-  //   ]
-  // },
+  {
+    title: "A loved one is upset with you. Why?",
+    answers: [
+      {
+        answer: "You were being stubborn",
+        gryffindor: 100,
+      },
+      {
+        answer: "You were being a pushover",
+        hufflepuff: 100,
+      },
+      {
+        answer: "You were being selfish",
+        slytherin: 100,
+      },
+      {
+        answer: "You were being a know-it-all",
+        ravenclaw: 100,
+      }
+    ]
+  },
   {
     title: "Two of your friends are fighting with each other. What do you do?",
     answers: [
       {
-        answer: "Mediate a conversation between the two",
+        answer: "Propose an imperfect compromise",
         gryffindor: 50,
         hufflepuff: 50,
       },
@@ -715,27 +715,27 @@ const questionBank = [
   //     }
   //   ]
   // },
-  {
-    title: "You're training for the Scotland Sweeper- a broomstick marathon across the whole country of Scotland. You are determined to get a personal best time, and have created a training schedule to allow you to achieve this goal. A friend, who is much slower than you, signs up for the Sweeper too, and asks if you can train together. You know that training with the friend will slow you down. What do you do? ",
-    answers: [
-      {
-        answer: "Tell them honestly that you're hoping for a personal best, so you'll be cheering for them, but you want to train alone.",
-        slytherin: 100,
-      },
-      {
-        answer: "Tell them that you really want to stick with your schedule, but give them a copy of the schedule in case they want to do something similar.",
-        ravenclaw: 100,
-      },
-      {
-        answer: "Agree to train with them - you probably weren't going to follow that schedule anyways.",
-        gryffindor: 100,
-      },
-      {
-        answer: "Agree to train with them, and plan to wake up an hour early each day to make up for the lost practice time.",
-        hufflepuff: 100,
-      }
-    ]
-  },
+  // {
+  //   title: "You're training for the Scotland Sweeper- a broomstick marathon across the whole country of Scotland. You are determined to get a personal best time, and have created a training schedule to allow you to achieve this goal. A friend, who is much slower than you, signs up for the Sweeper too, and asks if you can train together. You know that training with the friend will slow you down. What do you do? ",
+  //   answers: [
+  //     {
+  //       answer: "Tell them honestly that you're hoping for a personal best, so you'll be cheering for them, but you want to train alone.",
+  //       slytherin: 100,
+  //     },
+  //     {
+  //       answer: "Tell them that you really want to stick with your schedule, but give them a copy of the schedule in case they want to do something similar.",
+  //       ravenclaw: 100,
+  //     },
+  //     {
+  //       answer: "Agree to train with them - you probably weren't going to follow that schedule anyways.",
+  //       gryffindor: 100,
+  //     },
+  //     {
+  //       answer: "Agree to train with them, and plan to wake up an hour early each day to make up for the lost practice time.",
+  //       hufflepuff: 100,
+  //     }
+  //   ]
+  // },
   // {
   //   title: "Oh no! After young Harry Potter defeated He-Who-Must-Not-Be-Named, the Ministry of Magic has its hands full. There are Dark Wizards on the run, wizards and Muggles alike have been injured by magical accidents, and Muggles have even noticed an influx of owls during the day. What are you doing to help respond to the crisis?",
   //   answers: [
