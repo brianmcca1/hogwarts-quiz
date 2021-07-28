@@ -1,5 +1,6 @@
 import Question from "./Question";
 import questionBank from "./questionBank";
+import RESULTS_OPTIONS, { getResultsFromPercentages } from "./resultsConstants";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import React, { useState, useEffect } from "react";
@@ -14,6 +15,7 @@ function App() {
   let name = "";
   const [pointTotals, setPointTotals] = useState({});
   const [submittedAnswers, setSubmittedAnswers] = useState(false);
+  const [results, setResults] = useState(RESULTS_OPTIONS.UNDEFINED);
 
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   const firebaseConfig = {
@@ -36,6 +38,8 @@ function App() {
     });
     setPointTotals(points);
     setSubmittedAnswers(true);
+    // TOOD: Break this up maybe
+    setResults(getResultsFromPercentages(getPercentage(pointTotals.gryffindor), getPercentage(pointTotals.ravenclaw), getPercentage(pointTotals.hufflepuff), getPercentage(pointTotals.slytherin)));
   };
 
   const findAnswers = questions => {
@@ -122,10 +126,17 @@ function App() {
         <Button variant="primary" type="submit" className="sortButton">Sort me!</Button>
       </Form>
 
-      {/* <h1>Gryffindor: {getPercentage(pointTotals.gryffindor)}%</h1>
-      <h1>Ravenclaw: {getPercentage(pointTotals.ravenclaw)}%</h1>
-      <h1>Slytherin: {getPercentage(pointTotals.slytherin)}%</h1>
-      <h1>Hufflepuff: {getPercentage(pointTotals.hufflepuff)}%</h1> */}
+      {results !== RESULTS_OPTIONS.UNDEFINED ?
+        <div className="results">
+          <h3>You are a {results.title}</h3>
+          <p>{results.description}</p>
+          <h2>Gryffindor: {getPercentage(pointTotals.gryffindor)}%</h2>
+          <h2>Ravenclaw: {getPercentage(pointTotals.ravenclaw)}%</h2>
+          <h2>Slytherin: {getPercentage(pointTotals.slytherin)}%</h2>
+          <h2>Hufflepuff: {getPercentage(pointTotals.hufflepuff)}%</h2>
+        </div>
+      : <></>}
+
     </div>
 
   );
