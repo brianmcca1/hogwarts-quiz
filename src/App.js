@@ -11,8 +11,7 @@ import "firebase/auth";
 import "firebase/firestore";
 
 function App() {
-  const VERSION = "v1.0-beta"
-  let name = "";
+  const VERSION = "v1.0-beta-1"
   const [pointTotals, setPointTotals] = useState({});
   const [submittedAnswers, setSubmittedAnswers] = useState(false);
   const [results, setResults] = useState(RESULTS_OPTIONS.UNDEFINED);
@@ -32,14 +31,14 @@ function App() {
     event.preventDefault(); // Stop from refreshing/redirecting the page
     const answers = findAnswers(event.target);
     const points = getPointTotals(answers);
-    firebase.firestore().collection('results').doc(`${VERSION}: ${name}`).set({version: VERSION, answers, points}).then(() => {
+    firebase.firestore().collection('results').doc(`${VERSION}: ${new Date()}`).set({version: VERSION, answers, points}).then(() => {
       console.log("Just set data:");
       console.log(answers);
     });
     setPointTotals(points);
     setSubmittedAnswers(true);
     // TOOD: Break this up maybe
-    setResults(getResultsFromPercentages(getPercentage(pointTotals.gryffindor), getPercentage(pointTotals.ravenclaw), getPercentage(pointTotals.hufflepuff), getPercentage(pointTotals.slytherin)));
+    setResults(getResultsFromPercentages(getPercentage(points.gryffindor, points), getPercentage(points.ravenclaw, points), getPercentage(points.hufflepuff, points), getPercentage(points.slytherin, points)));
   };
 
   const findAnswers = questions => {
@@ -47,13 +46,9 @@ function App() {
     const answers = {};
     for (let i = 0; i < questions.length; i++) {
       const q = questions[i];
-      if (q.id === "name") {
-        name = q.value;
-      } else {
-        if (!answeredQuestions.includes(q.name) && q.checked) {
-          answeredQuestions.push(q.name);
-          answers[q.name] = q.id;
-        }
+      if (!answeredQuestions.includes(q.name) && q.checked) {
+        answeredQuestions.push(q.name);
+        answers[q.name] = q.id;
       }
     }
 
@@ -82,11 +77,11 @@ function App() {
     return points;
   };
 
-  const getPercentage = houseTotal => {
+  const getPercentage = (houseTotal, points = pointTotals) => {
     if (!houseTotal) {
       return 0;
     }
-    return Math.round((houseTotal / (pointTotals.gryffindor + pointTotals.hufflepuff + pointTotals.slytherin + pointTotals.ravenclaw)) * 100);
+    return Math.round((houseTotal / (points.gryffindor + points.hufflepuff + points.slytherin + points.ravenclaw)) * 100);
   }
 
   useEffect(() => {
@@ -94,6 +89,10 @@ function App() {
       firebase.initializeApp(firebaseConfig);
     }
   }, []);
+
+  const renderDescription = string => {
+    return string.split('\n').map(substring => <p>{substring}</p>)
+  };
 
   return (
     <div className="App">
@@ -103,33 +102,18 @@ function App() {
         <h3>By Olivia Losiewicz and Brian McCarthy</h3>
       </div>
       <Form onSubmit={handleSubmit} onReset={handleSubmit} className="form">
-        <Form.Label className="enterName">Enter your name</Form.Label>
-        <Form.Control
-          required
-          className="mb-2 nameField"
-          type="text"
-          placeholder="First name"
-          id="name"
-        />
         {
           questionBank.map(q =>
             <Question question={q} key={q.title}/>
           )
-        }
-        {submittedAnswers ? 
-          <div>
-            <h1>Submitted successfully!</h1>
-            <p>Since this was a small subset of questions, your results would not be representitive. Once these questions are finalized, you'll have the chance to take the full quiz to get your final results!</p>
-          </div>
-          : <></>
         }
         <Button variant="primary" type="submit" className="sortButton">Sort me!</Button>
       </Form>
 
       {results !== RESULTS_OPTIONS.UNDEFINED ?
         <div className="results">
-          <h3>You are a {results.title}</h3>
-          <p>{results.description}</p>
+          <h3>You are a {results.title}!</h3>
+          <div className="resultsDescription">{renderDescription(results.description)}</div>
           <h2>Gryffindor: {getPercentage(pointTotals.gryffindor)}%</h2>
           <h2>Ravenclaw: {getPercentage(pointTotals.ravenclaw)}%</h2>
           <h2>Slytherin: {getPercentage(pointTotals.slytherin)}%</h2>

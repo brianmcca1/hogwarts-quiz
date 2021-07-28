@@ -35,3 +35,14 @@
 .title {
   padding-bottom: 20px;
 }
+
+.results {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.resultsDescription {
+  text-align: left;
+  display: block;
+}
