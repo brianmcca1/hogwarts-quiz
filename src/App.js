@@ -1,6 +1,6 @@
 import Question from "./Question";
 import questionBank from "./questionBank";
-import RESULTS_OPTIONS, { getResultsFromPercentages } from "./resultsConstants";
+import { HOUSES, HOUSE_DESCRIPTIONS, HYBRID_TO_PRIMARY_HOUSE, getResultsFromPercentages } from "./resultsConstants";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import React, { useState, useEffect } from "react";
@@ -14,11 +14,11 @@ function App() {
   const VERSION = "v1.0-beta-1"
   const [pointTotals, setPointTotals] = useState({});
   const [submittedAnswers, setSubmittedAnswers] = useState(false);
-  const [results, setResults] = useState(RESULTS_OPTIONS.UNDEFINED);
+  const [results, setResults] = useState(HOUSES.UNDEFINED);
 
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   const firebaseConfig = {
-    apiKey: "AIzaSyA2iYm8Ihm1gFLlGQhC2StEOMnRe-VJfFo",
+    apiKey: process.env.firebaseAPIKey,
     authDomain: "hogwartshousequiz-aa7fe.firebaseapp.com",
     databaseURL: "https://hogwartshousequiz-aa7fe.firebaseio.com",
     projectId: "hogwartshousequiz-aa7fe",
@@ -90,9 +90,24 @@ function App() {
     }
   }, []);
 
-  const renderDescription = string => {
-    return string.split('\n').map(substring => <p>{substring}</p>)
+  useEffect(() => {
+    const resultsElement = document.getElementById('pointTotals');
+    if (resultsElement) {
+      resultsElement.scrollIntoView({behavior: "smooth"});
+    }
+  }, [results]);
+
+  const renderDescription = houseName => {
+    if (houseName === HOUSES.UNDEFINED) {
+      return '';
+    }
+    const baseDescription = HOUSE_DESCRIPTIONS[houseName];
+    console.log(baseDescription);
+    return baseDescription.split('\n').map(substring => <p>{substring}</p>)
   };
+
+  const primaryHouse = HYBRID_TO_PRIMARY_HOUSE[results] || results;
+  const secondaryHouse = HYBRID_TO_PRIMARY_HOUSE[results] ? results : HOUSES.UNDEFINED;
 
   return (
     <div className="App">
@@ -110,17 +125,27 @@ function App() {
         <Button variant="primary" type="submit" className="sortButton">Sort me!</Button>
       </Form>
 
-      {results !== RESULTS_OPTIONS.UNDEFINED ?
+      {results !== HOUSES.UNDEFINED ?
         <div className="results">
-          <h3>You are a {results.title}!</h3>
-          <div className="resultsDescription">{renderDescription(results.description)}</div>
-          <h2>Gryffindor: {getPercentage(pointTotals.gryffindor)}%</h2>
-          <h2>Ravenclaw: {getPercentage(pointTotals.ravenclaw)}%</h2>
-          <h2>Slytherin: {getPercentage(pointTotals.slytherin)}%</h2>
-          <h2>Hufflepuff: {getPercentage(pointTotals.hufflepuff)}%</h2>
+          <h3>You are a {primaryHouse ? primaryHouse : results}!</h3>
+          <div className="resultsDescription">{renderDescription(primaryHouse)}</div>
+          {secondaryHouse !== HOUSES.UNDEFINED ?
+            <div className="secondaryResults">
+              <h5>Based on your results, you may also identify as a {secondaryHouse}: </h5> 
+              <div className="resultsDescription">{renderDescription(secondaryHouse)}</div>
+            </div>
+          : <> </>}
+          <div id="pointTotals">
+            <h2>Gryffindor: {getPercentage(pointTotals.gryffindor)}%</h2>
+            <h2>Ravenclaw: {getPercentage(pointTotals.ravenclaw)}%</h2>
+            <h2>Slytherin: {getPercentage(pointTotals.slytherin)}%</h2>
+            <h2>Hufflepuff: {getPercentage(pointTotals.hufflepuff)}%</h2>
+          </div>
         </div>
       : <></>}
-
+      <div className="credits">
+        <p>Special thanks to Erin McCarthy, Charlie Losiewicz, Lisa Losiewicz, Lexie Lieberthal, Carly Griffin, Nick Christo, Katie McCarthy, Steffen Hartwell-Jones, Julie McCarthy, Mike McCarthy, Dave Losiewicz, Meredith Ward, and Jessica Alberto for helping us in our testing!</p>
+      </div>
     </div>
 
   );

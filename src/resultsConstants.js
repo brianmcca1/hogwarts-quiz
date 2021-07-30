@@ -1,119 +1,104 @@
-const RESULTS_OPTIONS = {
-  GRYFFINDOR: {
-    title: 'Gryffindor',
-    description: 'Congratulations! As a member of Gryffindor House, you’re courageous and driven by your primary value of fairness. If, unlike Harry Potter, you haven’t had the opportunity to fight off dark wizards, your bravery may show itself in how you stand up for others or yourself when you sense something is unfair, or how you hold on to your convictions. Gryffindors also tend to be adventurous and big-picture thinkers: you dream big, and are driven by passion for the things you care about. Members of Gryffindor House don’t have much time or energy for things they don’t feel passionate about, as they are busy giving 110% to their priorities. A Gryffindor often makes decisions using their gut feelings. On your worst days, you may be stubborn or impulsive.\nYou’re in good company- famous Gryffindors include Harry Potter, Hermione Granger, the entire Weasley family, Albus Dumbledore, all the Marauders….just like, pick up a Harry Potter book and you’ll find some.\nSome famous Muggles who identify as Gryffindor are Tom Holland, Selena Gomez, Kit Harrington, and Harry Potter actors Evanna Lynch, Daniel Radcliffe, and Bonnie Wright.',
-  },
-  GRYFFINPUFF: {
-    title: 'Gryffinpuff',
-    description: 'gryffinpuff description'
-  },
-  GRYFFINCLAW: {
-    title: 'Gryffinclaw',
-    description: 'gryffinclaw description'
-  },
-  GRYFFERIN: {
-    title: 'Gryfferin',
-    description: 'gryfferin description',
-  },
-  HUFFLEPUFF: {
-    title: 'Hufflepuff',
-    description: 'hufflepuff description',
-  },
-  HUFFLEDOR: {
-    title: 'Huffledor',
-    description: 'huffledor description',
-  },
-  HUFFLECLAW: {
-    title: 'Huffleclaw',
-    description: 'huffleclaw description',
-  },
-  HUFFLERIN: {
-    title: 'Hufflerin',
-    description: 'hufflerin description',
-  },
-  RAVENCLAW: {
-    title: 'Ravenclaw',
-    description: 'ravenclaw description',
-  },
-  RAVENDOR: {
-    title: 'Ravendor',
-    description: 'ravendor description',
-  },
-  RAVENPUFF: {
-    title: 'Ravenpuff',
-    description: 'ravenpuff desscription',
-  },
-  RAVERIN: {
-    title: 'Raverin',
-    description: 'raverin description'
-  },
-  SLYTHERIN: {
-    title: 'Slytherin',
-    description: 'slytherin description',
-  },
-  SLYTHERDOR: {
-    title: 'Slytherdor',
-    description: 'slytherdor description',
-  },
-  SLYTHERPUFF: {
-    title: 'Slytherpuff',
-    description: 'slytherpuff description',
-  },
-  SLYTHERCLAW: {
-    title: 'Slytherclaw',
-    description: 'slytherclaw description',
-  },
-  UNDEFINED: {
-    title: 'Undefined',
-    description: 'Undefined',
-  },
+const HOUSES = {
+  GRYFFINDOR: 'Gryffindor',
+  GRYFFINPUFF: 'Gryffinpuff',
+  GRYFFINCLAW: 'Gryffinclaw',
+  GRYFFERIN: 'Gryfferin',
+  HUFFLEPUFF: 'Hufflepuff',
+  HUFFLEDOR: 'Huffledor',
+  HUFFLECLAW: 'Huffleclaw',
+  HUFFLERIN: 'Hufflerin',
+  RAVENCLAW: 'Ravenclaw',
+  RAVENDOR: 'Ravendor',
+  RAVENPUFF: 'Ravenpuff',
+  RAVERIN: 'Raverin',
+  SLYTHERIN: 'Slytherin',
+  SLYTHERDOR: 'Slytherdor',
+  SLYTHERPUFF: 'Slytherpuff',
+  SLYTHERCLAW: 'Slytherclaw',
+  UNDEFINED: 'Undefined'
 };
+
+const HOUSE_DESCRIPTIONS = {
+  [HOUSES.GRYFFINDOR]: 'Congratulations! As a member of Gryffindor House, you’re courageous and driven by your primary value of fairness. If, unlike Harry Potter, you haven’t had the opportunity to fight off dark wizards, your bravery may show itself in how you stand up for others or yourself when you sense something is unfair, or how you hold on to your convictions. Gryffindors also tend to be adventurous and big-picture thinkers: you dream big, and are driven by passion for the things you care about. Members of Gryffindor House don’t have much time or energy for things they don’t feel passionate about, as they are busy giving 110% to their priorities. A Gryffindor often makes decisions using their gut feelings. On your worst days, you may be stubborn or impulsive.\nYou’re in good company- famous Gryffindors include Harry Potter, Hermione Granger, the entire Weasley family, Albus Dumbledore, all the Marauders….just like, pick up a Harry Potter book and you’ll find some.\nSome famous Muggles who identify as Gryffindor are Tom Holland, Selena Gomez, Kit Harrington, and Harry Potter actors Evanna Lynch, Daniel Radcliffe, and Bonnie Wright.',
+  [HOUSES.GRYFFINPUFF]: 'Congratulations! As a primary Gryffindor and secondary Hufflepuff, you show traits of both houses. Though you’re primarily driven by Gryffindor big-picture values like fairness, you also really value your individual relationships. Gryffinpuffs are usually extraverted and always motivated externally- i.e., by other people, and how other people experience or are impacted by something (as opposed to their Slytherclaw counterparts). Their love of other people means that Gryffinpuffs can sometimes be too trusting of others, and too selfless- they’ll defend their friends to death, but probably have no idea how to engage in self-care.\nGryffindor’s courage combined with Hufflepuff’s work ethic means that Gryffindors will fearlessly throw everything they have into projects or causes that are important to them, and see it through to the end. They share Gryffindor’s sense of adventure, but may prefer group adventures, as they thrive in the company of others. The classic Hufflepuff loyalty is also present in a Gryffinpuff, a loyalty that they extend both to their friends and their convictions.\nGryffinpuffs retain Gryffindor’s stubbornness and Hufflepuff’s self-negligence, but they are not as impulsive as a “true Gryffindor”, nor are they conflict-avoidant like a “true Hufflepuff”.\nYou’re in good company- we have reason to suspect that Neville Longbottom and Remus Lupin are both Gryffinpuffs, too!',
+  [HOUSES.GRYFFINCLAW]: 'Congratulations! As a primary Gryffindor and secondary Ravenclaw, you show traits of both houses. Though you’re primarily driven by Gryffindor big-picture values like fairness, you also really value knowledge and learning. Gryffinclaws approach issues with both emotion and logic, though it is passion that drives their interests and directs where they spend their energy.\nGryffindor’s values combined with Ravenclaw’s intellectual curiosity and analytical mind means that Gryffinclaws are deep thinkers, and usually feel strongly about justice and equality. They’re not afraid to throw themselves into their studies, and usually value education. The classic Ravenclaw creativity may be channeled into a Gryffinclaw’s passion project. Gryffinclaws may also share Gryffindor’s love of adventure, though they are never reckless.\nBecause Gryffinclaws tend to stand strong in their moral convictions, they can sometimes be dismissive of others. Sometimes they appear lazy, as they are deliberate about where they direct their energy. Gryffinclaws retain Gryffindor’s stubbornness and Ravenclaw’s strictness. They are not as impulsive as a “true Gryffindor”, but also not as indecisive as a “true Ravenclaw”,  as they think through most of their decisions without feeling the need to dwell too much.\nYou’re in good company- both Minerva McGonagall and Hermione Granger are Gryffinclaws.',
+  [HOUSES.GRYFFERIN]: 'Congratulations! As a primary Gryffindor and secondary Slytherin, you show traits of both houses. Though you’re primarily driven by Gryffindor values such as fairness, you also show Slytherin ambition and strive for achievement and accomplishment. Gryfferins are risk takers, and ready to throw their whole selves into anything they do. They’re big-picture thinkers, shooting for the stars and focusing on the endgame, and they’re comfortable taking risks, since they know that big risks can lead to big rewards.\nGryffindor’s courage combined with Slytherin’s ambition means that Gryfferins are a force to be reckoned with, fearless wizards who won’t stop at anything to achieve their goals. They’re usually spontaneous, and are very familiar with being in the spotlight. Gryfferins also usually retain Gryffindor’s sense of adventure and Slytherin’s resourcefulness.\nLike Slytherins, Gryfferins are often very competitive, though unlike “true Slytherins”, they are not particularly selfish. They also generally present with much of the impulsiveness and stubbornness present in Gryffindors, and their go-getter nature means that they can be perceived as bossy.\nYou’re in good company- Harry Potter and Albus Dumbledore are Gryfferins. Also, Peter Pettigrew. Sorry about that.',
+  [HOUSES.HUFFLEPUFF]: 'Congratulations! As a member of Hufflepuff House, you’re caring and driven by your primary value of fostering relationships. Hufflepuffs have a mixed reputation in the Harry Potter books- sometimes invisible, sometimes heroic- and this is because while Hufflepuffs are often extroverted, they don’t necessarily need to be in the spotlight (some will avoid it entirely, while others don’t mind it). Hufflepuffs are very hardworking, not afraid to get their hands dirty, and tend to put a lot of effort into everything they do. They’re also very loyal friends. Their strong focus on interpersonal relationships means that Hufflepuffs may do whatever they can to avoid conflict. Other times, they spend so much time focusing on other people that they neglect themselves.\nYou’re in good company- famous Hufflepuffs include Cedric Diggory, Nymphadora Tonks, Pomona Sprout, and Newt Scamander.\nSome famous Muggles who identify as Hufflepuffs are Rupert Grint, Dwayne “the Rock” Johnson, John Green, and Harry Potter actor Eddie Redmayne.',
+  [HOUSES.HUFFLEDOR]: 'Congratulations! As a primary Hufflepuff and secondary Gryffindor, you show traits of both houses. Though you’re primarily driven by the Hufflepuff value of fostering relationships and connecting with people, you also have a strong sense of fairness. Huffledors are usually extraverted and always motivated externally- i.e., by other people, and how other people experience or are impacted by something (as opposed to their Slytherclaw counterparts). Huffledors spend most of their life helping or caring for other people, and the last person they think about is themselves.\nHufflepuff’s caring nature combined with Gryffindor’s adventurousness means that Huffledors are really fun to be around, and they thrive in the company of others. Though all Hufflepuffs are in tune with others’ feelings, Huffledors in particular are more likely to speak up when something feels wrong or defend their friends. They also retain Hufflepuff’s work ethic, often applying it to promote Gryffindor values, like fairness or equity.\nA Huffledor’s love of other people means that they can sometimes be too trusting of others, and too selfless- they have probably never heard of self-care. Unlike “true Hufflepuffs”, Huffledors are not particularly conflict-avoidant and rarely get walked on by others. They may also retain some of Gryffindor’s stubbornness or impulsivity.\nYou’re in good company- Cedric Diggory is a Huffledor!',
+  [HOUSES.HUFFLECLAW]: 'Congratulations! As a primary Hufflepuff and secondary Ravenclaw, you show traits from both houses. Though you’re primarily driven by the Hufflepuff value of fostering relationships and connecting with people, you are also very intellectually curious. Huffleclaws spend much of their time thinking about others. They may display the extraverted nature of a Hufflepuff or the introverted nature of a Ravenclaw. Though they love being with other people, they also value alone time and may prefer smaller groups to larger ones.\nHufflepuff’s work ethic combined with Ravenclaw’s intellectual curiosity and analytical mind mean that Huffleclaws are methodical and detail-oriented. A risk-averse group, they tend to follow the rules. A loyal Huffleclaw’s relationships go deep, as their caring and curious mind mean that they take the time to really get to know each of their friends. Huffleclaws also retain Ravenclaw’s creativity, which usually manifests itself in hobbies or pastimes, as opposed to passion projects or careers. \mA Huffleclaw exemplifies Ravenclaw’s rigidity- they like to stick to plans and rules, and they may get nervous when things go awry. Hufflepuff’s caring nature magnifies the indecisiveness of a Ravenclaw, as Huffleclaws may spend a long time making decisions to ensure that everyone is happy. They also retain the conflict-avoidant nature of a Hufflepuff, though they do not neglect their own self-care quite as much as a “true Hufflepuff”.\nAs she is a distinguished educator, we’re betting that Pomona Sprout is a Huffleclaw, too. Though the underrepresentation of Hufflepuffs, specifically Huffleclaws, in the books is quite saddening, we wouldn’t dwell too much of the fact that JKR doesn’t think you’re worth focusing on. As a great wizard once said, she really needs to sort out her priorities.',
+  [HOUSES.HUFFLERIN]: 'Congratulations! As a primary Hufflepuff and secondary Slytherin, you show traits of both houses. Though you’re primarily driven by the Hufflepuff value of fostering relationships and connecting with people, you also show Slytherin ambition and strive for accomplishment and achievement. Hufflerins are usually extraverted, but their Slytherin introverted side may come out at times, too. Since both Hufflepuffs and Slytherins are no stranger to hard work, Hufflerins tend to be hardworking, practical, and responsible.\nThe caring nature of a Hufflepuff combined with Slytherin’s resourcefulness means that Hufflerins are particularly good at reading people. They very much retain the Hufflepuff quality of being loyal friends. Sometimes Hufflerins will appear to be “true Hufflepuffs” until you see them in the workplace, where their ambition and resourcefulness reveals itself. Hufflerins tend to be especially good leaders, as they have both the empathy and the drive required to effectively motivate others.\nHufflepuff’s selflessness cancels out Slytherin’s selfishness, but as primary Hufflepuffs, Hufflerins may still forget to look after their own needs, throwing themselves into their social lives or their work. Hufflerins care perhaps a bit too much about what others think, and they still display the Huffepuff’s conflict-avoidant nature, though assertiveness may reveal itself in workplace settings.\nYou’re in good company- Ernie Macmillan is a Hufferin, too!',
+  [HOUSES.RAVENCLAW]: 'Congratulations! As a member of Ravenclaw House, you’re intellectually curious and driven by your primary value of gaining and expanding on knowledge. Ravenclaws, though often oversimplified as the “smart” students, are characterized by their creativity, open-mindedness, and analytical skills. Ravenclaws are nerds in the most positive sense of the word- they want to learn about a wide variety of topics, and they want to dive deep into whatever they’re learning about or working on. Their tendency to analyze may result in indecisiveness. While open-minded and excited about learning, Ravenclaws spend a lot of time inside their own heads and can also be strict or rigid about their behavior, or nervous about breaking rules.\nYou’re in good company- famous Ravenclaws include Luna Lovegood, Filius Flitwick, Sybill Trelawney, Cho Chang, and Gilderoy Lockhart (okay, yikes).\nSome Muggles who identify as Ravenclaws include Stephen Colbert, Darren Criss, and Natalie Portman.',
+  [HOUSES.RAVENDOR]: 'Congratulations! As a primary Ravenclaw and secondary Gryffindor, you show traits of both houses. Though you’re primarily motivated by the Ravenclaw values of knowledge and learning, you also have a strong sense of fairness. Ravenclaw’s nerdy enthusiasm amplifies Gryffindor’s passion, and it is that passion that drives their interests and directs where they spend their energy. Ravendors tend to be introverted, but they may also display Gryffindor’s extraversion, and they are still comfortable in groups.\nRavenclaw’s intellectual curiosity and analytical mind combined with Gryffindor’s values means that Ravendors are deep thinkers, and usually feel strongly about justice and equality.  They’re not afraid to throw themselves into their studies, and usually value education. The classic Ravenclaw creativity may be channeled into a Ravendor’s passion project. Ravendors may also share Gryffindor’s love of adventure. They are never reckless, though they are also not as nervous as “true Ravenclaws”. \nBecause Ravendors tend to stand strong in their moral convictions, they can sometimes be dismissive of others. Sometimes they appear lazy, as they are deliberate about where they direct their energy. Ravendors retain Gryffindor’s stubbornness and Ravenclaw’s strictness. They are not as impulsive as a “true Gryffindor”, but also not as indecisive as a “true Ravenclaw”,  as they think through most of their decisions without feeling the need to dwell too much.\nYou’re in good company- Professor Filius Flitwick is a Ravendor!',
+  [HOUSES.RAVENPUFF]: 'Congratulations! As a primary Ravenclaw and a secondary Hufflepuff, you show traits of both houses. Though you’re primarily motivated by the Ravenclaw value of knowledge and learning, you also really value your individual relationships. Ravenpuffs are the most social of the Ravenclaws, and may either display the introverted nature of a Ravenclaw or the extraverted nature of a Hufflepuff. They enjoy being with other people, but they also value alone time and may prefer smaller groups to larger ones. \nRavenclaw’s curiosity combined with Hufflepuff’s caring nature means that Ravenpuffs spend much of their time thinking about other people. A loyal Ravenpuff’s relationships go deep, and they take the time to really get to know each of their friends. Ravenclaw’s analytical mind and Hufflepuff’s work ethic also mean that Ravenpuffs are methodical and detail-oriented. A risk averse group, they tend to follow the rules. Ravenclaw’s creativity usually manifests itself in hobbies or pastimes for Ravenpuffs, as opposed to passion projects or careers. While some Ravenpuffs present as a true “hybrid house”, either a very kind nerd or a person who spends a lot of time analyzing other people, other Ravenpuffs may appear to be “true Ravenclaws” until you get to know them better. \nA Ravenpuff exemplifies Ravenclaw’s rigidity- they like to stick to plans and rules, and they may get nervous when things go awry. Hufflepuff’s caring nature magnifies the indecisiveness of a Ravenclaw, as Ravenpuffs may spend a long time making decisions to ensure that everyone is happy. They also retain the conflict-avoidant nature of a Hufflepuff, though they do not neglect their own self-care nearly as much as a “true Hufflepuff”. \nYou’re in good company- both the creators of this quiz are Ravenpuffs, and they’re the greatest people in the world (see, even Ravenpuffs have a little Gryffindor and Slytherin in them). We also think Cho Chang is a Ravenpuff!',
+  [HOUSES.RAVERIN]: 'Congratulations! As a primary Ravenclaw and secondary Slytherin, you show traits of both houses. Though you’re mainly motivated by Ravenclaw’s love of knowledge and learning, you also show Slytherin ambition and strive for achievement and accomplishment. Raverins tend to be internally motivated (unlike their Gryffinpuff counterparts), focusing on what they can learn or get out of an experience. Raverins are usually introverted and independent, and they have a serious side. Raverins are very comfortable being by themselves, and they don’t get bored easily.\nRavenclaw’s analytical mind combined with Slytherin’s resourcefulness means that Raverins are usually very clever. Their logical and results-oriented brain is good at problem-solving and efficient at completing tasks. Raverins often apply Ravenclaw’s creativity to the workplace, finding jobs with opportunity for creativity, or engaging in creative problem-solving. Curious and ambitious, Raverins enjoy learning new things, especially if they serve a specific purpose.\nOf all Ravenclaws, Raverins spend the most time in their own heads, meaning that they may miss social cues or at times seem apathetic to others’ feelings or problems. They tend to retain Ravenclaw’s rigidity and Slytherin’s selfishness, but are not quite as indecisive as “true Ravenclaws”. Raverins may be more competitive against themselves than other people. \nYou’re in good (ish) company- Ollivander and Gilderoy Lockhart are both Raverins!',
+  [HOUSES.SLYTHERIN]: 'Congratulations! As a member of Slytherin House, you’re ambitious and driven by your primary goal of accomplishment. Slytherin gets a bad reputation in the books, but since we don’t live in a world separated into binary good and evil, your Slytherin identity nothing to do with Death Eaters or genocide (if it does, please leave and reconsider your life choices). Slytherins are driven, efficient, and results-oriented. They are also clever and resourceful and often make good leaders. Slytherins will put in hard work without batting an eye if they see a task as important to achieving their goals. They also dream big, though their drive may also result in moments of selfishness or competitiveness.\nYou’re in good company- famous Slytherins include Severus Snape, Horace Slughorn, Draco Malfoy, and depending on whether or not you think Cursed Child is canon, Albus Severus Potter.\nSome Muggles who identify as Slytherin include Lin Manuel Miranda, Ariana Grande, and Taylor Swift.',
+  [HOUSES.SLYTHERDOR]: 'Congratulations! As a primary Slytherin and secondary Gryffindor, you show traits of both houses. Though you’re mainly motivated by the Slytherin value of accomplishment, you also have a strong sense of fairness. Slytherdors are ready to throw their whole selves into everything they do. They’re big-picture thinkers, shooting for the stars and focusing on the endgame, and they’re comfortable taking risks, since they know that big risks can lead to big rewards. Slytherdors tend to be introverted, but they also may display the extraverted nature of Gryffindors. They do well in groups, but since they give 110% energy to everything, they may need to recharge after.\nGryffindor’s courage combined with Slytherin’s ambition means that Slytherdors are a force to be reckoned with, fearless wizards who won’t stop at anything to achieve their goals. They can be spontaneous and don’t mind being in the spotlight. Slytherin’s results-oriented mind and Gryffindor’s passion mean that Slytherdors often make very good leaders, as their big-picture way of thinking inspires others. Slytherdors also usually retain Slytherin’s resourcefulness and Gryffindor’s sense of adventure.\nLike Slytherins, Slytherdors are often competitive. They are not quite as selfish as “true Slytherins”, but they always ensure that they look after themselves. Slytherdors also generally present with much of the stubbornness present in Gryffindors, but they are not as impulsive, given Slytherin’s tendency towards logic. Their go-getter nature means that they can sometimes be perceived as bossy.\nYou’re in good (ish) company- Severus Snape and Draco Malfoy are also Slytherdors.',
+  [HOUSES.SLYTHERPUFF]: 'Congratulations! As a primary Slytherin and secondary Hufflepuff, you show traits of both houses. Though you’re mainly motivated by the Slytherin value of achievement and accomplishment, you also really value your individual relationships. Slytherpuffs may display the introverted nature of Slytherins or the extraverted nature of Hufflepuffs. Since both Hufflepuffs and Slytherins are no stranger to hard work, Slytherpuffs tend to be hardworking, practical, and responsible.\nSlytherin’s drive combined with Hufflepuff’s empathy means that Slytherpuffs tend to be especially good leaders who can effectively motivate others. Slytherpuffs are particularly good at reading people thanks to Slytherin’s resourcefulness and Hufflepuff’s caring nature. They may be closed off at first, but once you get to know them they are very loyal friends. Sometimes Slytherpuffs will appear to be “true Slytherins” until you get to know them, and their quiet, caring nature reveals itself.\nSlytherpuffs are the least selfish of the Slytherins, and like Hufflepuffs, they may forget to look after their own needs, throwing themselves into their work or ignoring their own problems to help a friend. However, at the end of the day, Slytherpuffs are results-oriented Slytherins who will ensure that their own needs are taken care of. Slytherpuffs care too much about what others think, and they may do whatever they can to avoid conflict, but when push comes to shove, they can stand up for themselves.\nYou’re in good company- Horace Slughorn and Narcissa Malfoy are Slytherpuffs! And Cornelius Fudge....well, you win some, you lose some.',
+  [HOUSES.SLYTHERCLAW]: 'Congratulations! As a primary Slytherin and secondary Ravenclaw, you show traits of both houses. Though you’re mainly motivated by the Slytherin values of achievement and accomplishment, you also really value knowledge and learning. Slytherclaws tend to be internally motivated (unlike their Gryffinpuff counterparts), focusing on what they can learn or get out of an experience. They are usually introverted and independent, and they have a serious side. Slytherclaws are very comfortable being by themselves, and they don’t get bored easily. Slytherclaws thrive when they’re pursuing a goal they’ve set for themselves- be it a career they want, a skill they want to gain, or a creative project they want to embark on.\nSlytherin’s resourcefulness combined with Ravenclaw’s analytical mind means that Raverins are usually very clever. Their logical and results-oriented brain is good at problem solving and efficient at completing tasks. Slytherclaws display Ravenclaw’s creativity in the workplace, finding jobs that allow them to exercise their creativity or frequently engaging in creative problem-solving. Curious and ambitious, Slytherclaws enjoy learning new things when they can see how it benefits them. \nSlytherclaws are the least social of the Slytherins, and like Ravenclaws, they spend a lot of time in their own heads, meaning that they may miss social cues or at times seem apathetic to others’ feelings or problems. They tend to retain Ravenclaw’s rigidity and Slytherin’s selfishness, but are not quite as indecisive as “true Ravenclaws”. Slytherpuffs may be competitive both against themselves and against other people. \nYou’re in good company- Merlin was also a Slytherclaw!',
+};
+
+const HYBRID_TO_PRIMARY_HOUSE = {
+  [HOUSES.GRYFFINPUFF]: HOUSES.GRYFFINDOR,
+  [HOUSES.GRYFFINCLAW]: HOUSES.GRYFFINCLAW,
+  [HOUSES.GRYFFERIN]: HOUSES.GRYFFERIN,
+  [HOUSES.HUFFLEDOR]: HOUSES.HUFFLEPUFF,
+  [HOUSES.HUFFLECLAW]: HOUSES.HUFFLEPUFF,
+  [HOUSES.HUFFLERIN]: HOUSES.HUFFLEPUFF,
+  [HOUSES.RAVENDOR]: HOUSES.RAVENCLAW,
+  [HOUSES.RAVENPUFF]: HOUSES.RAVENCLAW,
+  [HOUSES.RAVERIN]: HOUSES.RAVENCLAW,
+  [HOUSES.SLYTHERDOR]: HOUSES.SLYTHERIN,
+  [HOUSES.SLYTHERPUFF]: HOUSES.SLYTHERIN,
+  [HOUSES.SLYTHERCLAW]: HOUSES.SLYTHERCLAW,
+};
+
+
 
 const getResultsFromPercentages = (gryffindor, ravenclaw, hufflepuff, slytherin) => {
   switch([gryffindor, ravenclaw, hufflepuff, slytherin].indexOf(Math.max(gryffindor, ravenclaw, hufflepuff, slytherin))) {
     case 0: // Gryffindor was the highest
       if (ravenclaw > 25) {
-        return RESULTS_OPTIONS.GRYFFINCLAW;
+        return HOUSES.GRYFFINCLAW;
       } else if (hufflepuff > 25) {
-        return RESULTS_OPTIONS.GRYFFINPUFF;
+        return HOUSES.GRYFFINPUFF;
       } else if (slytherin > 25) { 
-        return RESULTS_OPTIONS.GRYFFERIN;
+        return HOUSES.GRYFFERIN;
       } else {
-        return RESULTS_OPTIONS.GRYFFINDOR;
+        return HOUSES.GRYFFINDOR;
       }
     case 1: // Ravenclaw was the highest
       if (gryffindor > 25) {
-        return RESULTS_OPTIONS.RAVENDOR;
+        return HOUSES.RAVENDOR;
       } else if (hufflepuff > 25) {
-        return RESULTS_OPTIONS.RAVENPUFF;
+        return HOUSES.RAVENPUFF;
       } else if (slytherin > 25) {
-        return RESULTS_OPTIONS.RAVERIN;
+        return HOUSES.RAVERIN;
       } else {
-        return RESULTS_OPTIONS.RAVENCLAW;
+        return HOUSES.RAVENCLAW;
       }
     case 2: // Hufflepuff was the highest
       if (gryffindor > 25) {
-        return RESULTS_OPTIONS.HUFFLEDOR;
+        return HOUSES.HUFFLEDOR;
       } else if (ravenclaw > 25) {
-        return RESULTS_OPTIONS.HUFFLECLAW;
+        return HOUSES.HUFFLECLAW;
       } else if (slytherin > 25) {
-        return RESULTS_OPTIONS.HUFFLERIN;
+        return HOUSES.HUFFLERIN;
       } else {
-        return RESULTS_OPTIONS.HUFFLEPUFF;
+        return HOUSES.HUFFLEPUFF;
       }
     case 3: // Slytherin was the highest
       if (gryffindor > 25) {
-        return RESULTS_OPTIONS.SLYTHERDOR;
+        return HOUSES.SLYTHERDOR;
       } else if (ravenclaw > 25) {
-        return RESULTS_OPTIONS.SLYTHERCLAW;
+        return HOUSES.SLYTHERCLAW;
       } else if (hufflepuff > 25) {
-        return RESULTS_OPTIONS.SLYTHERPUFF;
+        return HOUSES.SLYTHERPUFF;
       } else {
-        return RESULTS_OPTIONS.SLYTHERIN;
+        return HOUSES.SLYTHERIN;
       }
     default:
-        return RESULTS_OPTIONS.UNDEFINED;
+        return HOUSES.UNDEFINED;
   }
 };
 
-export { RESULTS_OPTIONS as default, getResultsFromPercentages };
+export { HOUSES, HOUSE_DESCRIPTIONS, HYBRID_TO_PRIMARY_HOUSE, getResultsFromPercentages };

@@ -46,3 +46,11 @@
   text-align: left;
   display: block;
 }
+
+.credits {
+  width: 85%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 12px;
+}
