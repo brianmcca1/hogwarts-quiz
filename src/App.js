@@ -55,7 +55,7 @@ function App() {
           answers[q.name] = q.id;
         }
       }
-
+    }
     return answers;
   };
 
