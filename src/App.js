@@ -11,7 +11,8 @@ import "firebase/auth";
 import "firebase/firestore";
 
 function App() {
-  const VERSION = "v1.0-beta-1"
+  const VERSION = "v1.0-beta-2"
+  let name = "";
   const [pointTotals, setPointTotals] = useState({});
   const [submittedAnswers, setSubmittedAnswers] = useState(false);
   const [results, setResults] = useState(HOUSES.UNDEFINED);
@@ -31,7 +32,7 @@ function App() {
     event.preventDefault(); // Stop from refreshing/redirecting the page
     const answers = findAnswers(event.target);
     const points = getPointTotals(answers);
-    firebase.firestore().collection('results').doc(`${VERSION}: ${new Date()}`).set({version: VERSION, answers, points}).then(() => {
+    firebase.firestore().collection('results').doc(`${VERSION}: ${name} : ${new Date()}`).set({version: VERSION, answers, points}).then(() => {
       console.log("Just set data:");
       console.log(answers);
     });
@@ -46,11 +47,14 @@ function App() {
     const answers = {};
     for (let i = 0; i < questions.length; i++) {
       const q = questions[i];
-      if (!answeredQuestions.includes(q.name) && q.checked) {
-        answeredQuestions.push(q.name);
-        answers[q.name] = q.id;
+      if (q.id === "name") {
+        name = q.value;
+      } else {
+        if (!answeredQuestions.includes(q.name) && q.checked) {
+          answeredQuestions.push(q.name);
+          answers[q.name] = q.id;
+        }
       }
-    }
 
     return answers;
   };
@@ -117,6 +121,13 @@ function App() {
         <h3>By Olivia Losiewicz and Brian McCarthy</h3>
       </div>
       <Form onSubmit={handleSubmit} onReset={handleSubmit} className="form">
+        <Form.Label className="enterName">Enter your name</Form.Label>
+        <Form.Control
+          className="mb-2 nameField"
+          type="text"
+          placeholder="First name"
+          id="name"
+        />
         {
           questionBank.map(q =>
             <Question question={q} key={q.title}/>
