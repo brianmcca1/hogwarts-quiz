@@ -118,8 +118,8 @@ function App() {
     <div className="App">
       <div className="title">
         <img height="100" width="100" alt="Hogwarts logo" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/88ea2f25-febc-4acd-a81e-550202715dc3/d5najhh-4f69bfa2-3c87-4e75-9fc5-9bab1e3e30e9.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvODhlYTJmMjUtZmViYy00YWNkLWE4MWUtNTUwMjAyNzE1ZGMzXC9kNW5hamhoLTRmNjliZmEyLTNjODctNGU3NS05ZmM1LTliYWIxZTNlMzBlOS5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.iuuKu_jzr7AorcexGZzjaNGQrJwDevi0Cl2F7aEDX54"/>
-        <h1>The One True Hogwarts House Quiz</h1>
-        <h3>By Olivia Losiewicz and Brian McCarthy</h3>
+        <h1>Verita-sort-em</h1>
+        <h3>A Hogwarts House Sorting Quiz by Olivia Losiewicz and Brian McCarthy</h3>
       </div>
       <Form onSubmit={handleSubmit} onReset={handleSubmit} className="form">
         <Form.Label className="enterName">Enter your name</Form.Label>

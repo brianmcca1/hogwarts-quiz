@@ -514,22 +514,22 @@ const questionBank = [
     ]
   },
   {
-    title: "A loved one is upset with you. Why?",
+    title: "You have a tendency to be:",
     answers: [
       {
-        answer: "You were being stubborn",
+        answer: "Stubborn",
         gryffindor: 150,
       },
       {
-        answer: "You were being a pushover",
+        answer: "A pushover",
         hufflepuff: 150,
       },
       {
-        answer: "You were being selfish",
+        answer: "Selfish",
         slytherin: 150,
       },
       {
-        answer: "You were being a know-it-all",
+        answer: "A know-it-all",
         ravenclaw: 150,
       }
     ]
