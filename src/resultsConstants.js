@@ -37,6 +37,13 @@ const HOUSE_DESCRIPTIONS = {
   [HOUSES.SLYTHERCLAW]: 'Congratulations! As a primary Slytherin and secondary Ravenclaw, you show traits of both houses. Though you’re mainly motivated by the Slytherin values of achievement and accomplishment, you also really value knowledge and learning. Slytherclaws tend to be internally motivated (unlike their Gryffinpuff counterparts), focusing on what they can learn or get out of an experience. They are usually introverted and independent, and they have a serious side. Slytherclaws are very comfortable being by themselves, and they don’t get bored easily. Slytherclaws thrive when they’re pursuing a goal they’ve set for themselves- be it a career they want, a skill they want to gain, or a creative project they want to embark on.\nSlytherin’s resourcefulness combined with Ravenclaw’s analytical mind means that Raverins are usually very clever. Their logical and results-oriented brain is good at problem solving and efficient at completing tasks. Slytherclaws display Ravenclaw’s creativity in the workplace, finding jobs that allow them to exercise their creativity or frequently engaging in creative problem-solving. Curious and ambitious, Slytherclaws enjoy learning new things when they can see how it benefits them. \nSlytherclaws are the least social of the Slytherins, and like Ravenclaws, they spend a lot of time in their own heads, meaning that they may miss social cues or at times seem apathetic to others’ feelings or problems. They tend to retain Ravenclaw’s rigidity and Slytherin’s selfishness, but are not quite as indecisive as “true Ravenclaws”. Slytherpuffs may be competitive both against themselves and against other people. \nYou’re in good company- Merlin was also a Slytherclaw!',
 };
 
+const HOUSE_IMAGES = {
+  [HOUSES.GRYFFINDOR]: 'https://thenichollsworth.com/wp-content/uploads/2020/11/C0441055-AEE4-4C0D-8F43-A708DDEB6C3B-721x900.jpeg',
+  [HOUSES.HUFFLEPUFF]: 'https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/1280x1280/products/88364/91134/Harry-Potter-Hufflepuff-Crest-Official-wall-mounted-cardboard-cutout-buy-now-at-star__21122.1507644096.jpg?c=2',
+  [HOUSES.RAVENCLAW]: 'https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/1280x1280/products/88363/91130/Harry-Potter-Ravenclaw-Crest-Official-wall-mounted-cardboard-cutout-buy-now-at-star__86173.1507642983.jpg?c=2',
+  [HOUSES.SLYTHERIN]: 'https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/1280x1280/products/88362/91127/Harry-Potter-Slytherin-Crest-Official-wall-mounted-cardboard-cutout-buy-now-at-star__31920.1507640618.jpg?c=2',
+};
+
 const HYBRID_TO_PRIMARY_HOUSE = {
   [HOUSES.GRYFFINPUFF]: HOUSES.GRYFFINDOR,
   [HOUSES.GRYFFINCLAW]: HOUSES.GRYFFINCLAW,
@@ -101,4 +108,4 @@ const getResultsFromPercentages = (gryffindor, ravenclaw, hufflepuff, slytherin)
   }
 };
 
-export { HOUSES, HOUSE_DESCRIPTIONS, HYBRID_TO_PRIMARY_HOUSE, getResultsFromPercentages };
+export { HOUSES, HOUSE_IMAGES, HOUSE_DESCRIPTIONS, HYBRID_TO_PRIMARY_HOUSE, getResultsFromPercentages };

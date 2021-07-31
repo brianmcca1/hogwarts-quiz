@@ -1,6 +1,6 @@
 import Question from "./Question";
 import questionBank from "./questionBank";
-import { HOUSES, HOUSE_DESCRIPTIONS, HYBRID_TO_PRIMARY_HOUSE, getResultsFromPercentages } from "./resultsConstants";
+import { HOUSES, HOUSE_IMAGES, HOUSE_DESCRIPTIONS, HYBRID_TO_PRIMARY_HOUSE, getResultsFromPercentages } from "./resultsConstants";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import React, { useState, useEffect } from "react";
@@ -10,11 +10,14 @@ import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
 
+if (!process.env.firebaseAPIKey) {
+  require('dotenv').config();
+}
+
 function App() {
   const VERSION = "v1.0-beta-2"
   let name = "";
   const [pointTotals, setPointTotals] = useState({});
-  const [submittedAnswers, setSubmittedAnswers] = useState(false);
   const [results, setResults] = useState(HOUSES.UNDEFINED);
 
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -37,8 +40,6 @@ function App() {
       console.log(answers);
     });
     setPointTotals(points);
-    setSubmittedAnswers(true);
-    // TOOD: Break this up maybe
     setResults(getResultsFromPercentages(getPercentage(points.gryffindor, points), getPercentage(points.ravenclaw, points), getPercentage(points.hufflepuff, points), getPercentage(points.slytherin, points)));
   };
 
@@ -95,7 +96,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const resultsElement = document.getElementById('pointTotals');
+    const resultsElement = document.getElementById('resultsImage');
     if (resultsElement) {
       resultsElement.scrollIntoView({behavior: "smooth"});
     }
@@ -138,7 +139,8 @@ function App() {
 
       {results !== HOUSES.UNDEFINED ?
         <div className="results">
-          <h3>You are a {primaryHouse ? primaryHouse : results}!</h3>
+          <img id="resultsImage" height="300" width="220" src={HOUSE_IMAGES[primaryHouse]} alt={primaryHouse}/>
+          <h3 id="resultsHeader">You are a {primaryHouse}!</h3>
           <div className="resultsDescription">{renderDescription(primaryHouse)}</div>
           {secondaryHouse !== HOUSES.UNDEFINED ?
             <div className="secondaryResults">
