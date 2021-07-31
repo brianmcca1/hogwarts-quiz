@@ -15,7 +15,7 @@ if (!process.env.firebaseAPIKey) {
 }
 
 function App() {
-  const VERSION = "v1.0-beta-2"
+  const VERSION = "v1.0"
   let name = "";
   const [pointTotals, setPointTotals] = useState({});
   const [results, setResults] = useState(HOUSES.UNDEFINED);
