@@ -15,7 +15,7 @@ if (!process.env.firebaseAPIKey) {
 }
 
 function App() {
-  const VERSION = "v1.0"
+  const VERSION = "v1.1"
   let name = "";
   const [pointTotals, setPointTotals] = useState({});
   const [results, setResults] = useState(HOUSES.UNDEFINED);
@@ -35,12 +35,18 @@ function App() {
     event.preventDefault(); // Stop from refreshing/redirecting the page
     const answers = findAnswers(event.target);
     const points = getPointTotals(answers);
-    firebase.firestore().collection('results').doc(`${VERSION}: ${name} : ${new Date()}`).set({version: VERSION, answers, points}).then(() => {
+    const percentages = {
+      gryffindor: getPercentage(points.gryffindor, points),
+      ravenclaw: getPercentage(points.ravenclaw, points),
+      hufflepuff: getPercentage(points.hufflepuff, points),
+      slytherin: getPercentage(points.slytherin, points),
+    };
+    firebase.firestore().collection('results').doc(`${VERSION}: ${name} : ${new Date()}`).set({version: VERSION, answers, percentages}).then(() => {
       console.log("Just set data:");
       console.log(answers);
     });
     setPointTotals(points);
-    setResults(getResultsFromPercentages(getPercentage(points.gryffindor, points), getPercentage(points.ravenclaw, points), getPercentage(points.hufflepuff, points), getPercentage(points.slytherin, points)));
+    setResults(getResultsFromPercentages(percentages.gryffindor, percentages.ravenclaw, percentages.hufflepuff, percentages.slytherin));
   };
 
   const findAnswers = questions => {
@@ -93,7 +99,7 @@ function App() {
     if (!firebase.apps.length) {
       firebase.initializeApp(firebaseConfig);
     }
-  }, []);
+  });
 
   useEffect(() => {
     const resultsElement = document.getElementById('resultsImage');
@@ -107,7 +113,6 @@ function App() {
       return '';
     }
     const baseDescription = HOUSE_DESCRIPTIONS[houseName];
-    console.log(baseDescription);
     return baseDescription.split('\n').map(substring => <p>{substring}</p>)
   };
 
