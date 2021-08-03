@@ -741,19 +741,22 @@ const questionBank = [
     answers: [
       {
         answer: "Gryffindor",
-        gryffindor: 250,
+        gryffindor: 200,
       },
       {
         answer: "Ravenclaw",
-        ravenclaw: 250,
+        ravenclaw: 200,
       },
       {
         answer: "Hufflepuff",
-        hufflepuff: 250,
+        hufflepuff: 200,
       },
       {
         answer: "Slytherin",
-        slytherin: 250,
+        slytherin: 200,
+      },
+      {
+        answer: "I don't know",
       }
     ]
   },

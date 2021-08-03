@@ -15,7 +15,7 @@ if (!process.env.firebaseAPIKey) {
 }
 
 function App() {
-  const VERSION = "v1.1"
+  const VERSION = "v1.2"
   let name = "";
   const [pointTotals, setPointTotals] = useState({});
   const [results, setResults] = useState(HOUSES.UNDEFINED);
@@ -127,11 +127,11 @@ function App() {
         <h3>A Hogwarts House Sorting Quiz by Olivia Losiewicz and Brian McCarthy</h3>
       </div>
       <Form onSubmit={handleSubmit} onReset={handleSubmit} className="form">
-        <Form.Label className="enterName">Enter your name</Form.Label>
+        <Form.Label className="enterName">Enter your full name (Optional)</Form.Label>
         <Form.Control
           className="mb-2 nameField"
           type="text"
-          placeholder="First name"
+          placeholder="Name (Optional)"
           id="name"
         />
         {
